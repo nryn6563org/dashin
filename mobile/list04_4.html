@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- META TAG 정의 영역 /S -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=375px" />
+    <meta http-equiv="Cache-Control" content="No-Cache" />
+    <title>대신증권</title>
+    <link rel="stylesheet" type="text/css" href="css/qbot-embed-m.css" />
+    <script language="javascript" src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script>
+      $(document).bind('mobileinit', function () {
+        $.mobile.autoInitializePage = false;
+        $.mobile.autoInitializePage = false;
+      });
+    </script>
+    <script language="javascript" src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script language="javascript" src="jslib/iscroll.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.min.js"></script>
+    <script language="javascript" src="jslib/jquery.xml2json.js"></script>
+    <script language="javascript" src="js/bridge.js"></script>
+    <script language="javascript" src="js/widget.js"></script>
+    <script language="javascript" src="js/format.js"></script>
+    <script language="javascript">
+      $(document).ready(function () {
+        _onloadHandler();
+      });
+    </script>
+    <script type="text/javascript" src="js/scriptSelect.js"></script>
+  </head>
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div class="qbot-embed-m">
+      <input type="hidden" id="pms_code" name="pms_code" value="" /><input type="hidden" id="snCust" name="snCust" value="0003502163" />
+      <script type="text/javascript" src="js/mobile_qbot_common.js"></script>
+
+      <div id="page">
+        <div id="tab_warp">
+          <div class="tab_h2">
+            <ul>
+              <li>
+                <a class="t01" href="javascript:callMBMain();">
+                  <img style="width: 100%" src="img/tab_q_01.jpg" alt="퀀트전략소개" />
+                </a>
+              </li>
+              <li>
+                <a class="t02" href="javascript:callMBListMain();">
+                  <img style="width: 100%" src="img/tab_q_02.jpg" alt="퀀트전략선정" />
+                </a>
+              </li>
+              <li>
+                <a class="t03" href="javascript:callMBMyMain();">
+                  <img style="width: 100%" src="img/tab_q_03.jpg" alt="나의 퀀트" />
+                </a>
+              </li>
+              <li>
+                <a class="t04_on" href="javascript:callMBSELLogic();">
+                  <img style="width: 100%" src="img/tab_q_04_on.jpg" alt="퀀트포트폴리오" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 컨텐츠영역 /S -->
+        <div id="contents" class="contents">
+          <div class="item">안정중기</div>
+          <div id="flow_list_01_s" style="display: none">
+            <ul>
+              <li><a href="#">안정중기</a></li>
+
+              <li><a href="#">황소단기</a></li>
+
+              <li><a href="#">리치장기</a></li>
+
+              <li><a href="#">생명단기</a></li>
+
+              <li><a href="#">광산단기</a></li>
+
+              <li><a href="#">수정단기</a></li>
+
+              <li><a href="#">대박장기</a></li>
+
+              <li><a href="#">용꿈단기</a></li>
+
+              <li><a href="#">금돈중기</a></li>
+
+              <li><a href="#">황소장기</a></li>
+
+              <li><a href="#">용꿈장기</a></li>
+
+              <li><a href="#">철벽장기</a></li>
+
+              <li><a href="#">성장중기</a></li>
+
+              <li><a href="#">장수단기</a></li>
+
+              <li><a href="#">대박단기</a></li>
+
+              <li><a href="#">대지중기</a></li>
+
+              <li><a href="#">불꽃단기</a></li>
+
+              <li><a href="#">태양단기</a></li>
+
+              <li><a href="#">벼락중기</a></li>
+
+              <li><a href="#">리치단기</a></li>
+
+              <li class="btn_area">
+                <a href="#" onclick="showLayer('flow_list_01_s')"><img src="img/btn_close.jpg" width="63" height="30" /></a>
+              </li>
+            </ul>
+          </div>
+          <div id="align_list_s" onclick="showLayer('flow_list_01_s')" style="cursor: pointer">타 전략 바로가기</div>
+          <div class="q_m_box">
+            <ul>
+              <li><a class="m01" href="#"></a></li>
+              <li><a class="m02" href="#"></a></li>
+              <li><a class="m03" href="#"></a></li>
+              <li><a class="m04_on" href="#"></a></li>
+              <li><a class="m05" href="#"></a></li>
+              <li><a class="m06" href="#"></a></li>
+            </ul>
+          </div>
+
+          <iframe src="https://qbot.thinkpool.com:449/qbot11/mb/pms_info/T001_D_C.jsp?snCust=0003502163&amp;pageName=&amp;pms_code=00000805&amp;pos=" width="100%" height="600" scrolling="no" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

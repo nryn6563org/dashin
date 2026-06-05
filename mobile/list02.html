@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="ko" class="ui-mobile">
+  <head>
+    <!-- META TAG 정의 영역 /S -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=375px" />
+    <meta http-equiv="Cache-Control" content="No-Cache" />
+    <title>대신증권</title>
+    <link rel="stylesheet" type="text/css" href="css/qbot-embed-m.css" />
+    <script language="javascript" src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script>
+      $(document).bind('mobileinit', function () {
+        $.mobile.autoInitializePage = false;
+        $.mobile.autoInitializePage = false;
+      });
+    </script>
+    <script language="javascript" src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script language="javascript" src="jslib/iscroll.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.min.js"></script>
+    <script language="javascript" src="jslib/jquery.xml2json.js"></script>
+    <script language="javascript" src="js/bridge.js"></script>
+    <script language="javascript" src="js/widget.js"></script>
+    <script language="javascript" src="js/format.js"></script>
+    <script language="javascript">
+      $(document).ready(function () {
+        _onloadHandler();
+      });
+    </script>
+    <script type="text/javascript" src="js/scriptSelect.js"></script>
+  </head>
+  <body oncontextmenu="return false;" onselectstart="return false" ondragstart="return false;">
+    <div class="qbot-embed-m">
+      <input type="hidden" id="pms_code" name="pms_code" value="" /><input type="hidden" id="snCust" name="snCust" value="0003502163" />
+      <script type="text/javascript" src="js/mobile_qbot_common.js"></script>
+
+      <style>
+        /* 퀀트전략 선정 오른쪽테이블 컨텐츠부분 넓이 */
+        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(1n) {
+          width: 17% !important;
+        }
+
+        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(2n) {
+          width: 10% !important;
+        }
+
+        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(3n) {
+          width: 10% !important;
+        }
+
+        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(4n) {
+          width: 10% !important;
+        }
+
+        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(5n) {
+          width: 10% !important;
+        }
+
+        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(6n) {
+          width: 15% !important;
+        }
+
+        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(7n) {
+          width: 10% !important;
+        }
+      </style>
+
+      <!-- 해당 페이지 스크립트 정의 영역 /S -->
+      <script type="text/javascript">
+        //데이터 스크롤 할 경우 실행
+        function pullUpAction(targetid) {
+          // 임시 데이터 셋팅
+          //임시데이터
+          var data = new Array();
+          //data.push(["1","체크","마켓쉐어","83.21%","10.22%","13.34%","35.11%","리스크 관리형","중기"]);
+          //data.push(["1","체크","마켓쉐어","83.21%","10.22%","13.34%","35.11%","리스크 관리형","중기"]);
+          //data.push(["1","체크","마켓쉐어","83.21%","10.22%","13.34%","35.11%","리스크 관리형","중기"]);
+
+          kb.widget.scroll.insert(targetid, data);
+
+          //스크롤 refresh
+          kb.widget.scroll.refresh();
+        }
+
+        //클릭시
+        function showdata(sender) {
+          console.log(sender);
+        }
+
+        function init() {
+          exec();
+        }
+        function cleargrid() {
+          var target = document.getElementById('divGrid');
+          if (target.innerHTML == '') {
+            kb.widget.scroll.remove();
+            target.innerHTML = '';
+          }
+        }
+        function exec() {
+          var obj = document.getElementById('div1');
+          console.log(obj);
+
+          //초기화
+          cleargrid();
+
+          //iscroll - endless 타입 테스트
+          var data = new Array();
+
+          data.push(['1', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000805' />", '안정중기', "<span class='t_red'>263.63%</span>", "<span class='t_blue'>-15.75%</span>", "<span class='t_blue'>-6.59%</span>", "<span class='t_blue'>-11.53%</span>", '시장주도형', '단기']);
+
+          data.push(['2', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000762' />", '황소단기', "<span class='t_red'>262.34%</span>", "<span class='t_blue'>-1.99%</span>", "<span class='t_red'>24.07%</span>", "<span class='t_red'>32.30%</span>", '시장주도형', '단기']);
+
+          data.push(['3', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000755' />", '리치장기', "<span class='t_red'>256.53%</span>", "<span class='t_blue'>-7.20%</span>", "<span class='t_red'>3.91%</span>", "<span class='t_red'>0.05%</span>", '리스크관리형', '중기']);
+
+          data.push(['4', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000766' />", '생명단기', "<span class='t_red'>255.08%</span>", "<span class='t_blue'>-3.60%</span>", "<span class='t_red'>18.13%</span>", "<span class='t_red'>20.51%</span>", '시장주도형', '단기']);
+
+          data.push(['5', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000768' />", '광산단기', "<span class='t_red'>242.36%</span>", "<span class='t_blue'>-4.96%</span>", "<span class='t_red'>18.07%</span>", "<span class='t_red'>37.73%</span>", '시장주도형', '단기']);
+
+          data.push(['6', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000764' />", '수정단기', "<span class='t_red'>188.00%</span>", "<span class='t_blue'>-1.19%</span>", "<span class='t_red'>21.46%</span>", "<span class='t_red'>24.54%</span>", '시장주도형', '단기']);
+
+          data.push(['7', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000756' />", '대박장기', "<span class='t_red'>174.77%</span>", "<span class='t_red'>4.12%</span>", "<span class='t_red'>38.38%</span>", "<span class='t_red'>30.34%</span>", '리스크관리형', '중기']);
+
+          data.push(['8', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000761' />", '용꿈단기', "<span class='t_red'>167.91%</span>", "<span class='t_blue'>-4.17%</span>", "<span class='t_red'>18.26%</span>", "<span class='t_red'>27.07%</span>", '시장주도형', '단기']);
+
+          data.push(['9', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000802' />", '금돈중기', "<span class='t_red'>160.46%</span>", "<span class='t_blue'>-8.09%</span>", "<span class='t_red'>4.14%</span>", "<span class='t_red'>0.14%</span>", '시장주도형', '단기']);
+
+          data.push(['10', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000758' />", '황소장기', "<span class='t_red'>159.81%</span>", "<span class='t_blue'>-2.04%</span>", "<span class='t_red'>16.06%</span>", "<span class='t_red'>22.29%</span>", '리스크관리형', '중기']);
+
+          data.push(['11', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000757' />", '용꿈장기', "<span class='t_red'>145.49%</span>", "<span class='t_blue'>-12.73%</span>", "<span class='t_blue'>-0.89%</span>", "<span class='t_red'>7.41%</span>", '리스크관리형', '중기']);
+
+          data.push(['12', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000803' />", '철벽장기', "<span class='t_red'>132.89%</span>", "<span class='t_blue'>-5.02%</span>", "<span class='t_red'>31.30%</span>", "<span class='t_red'>39.29%</span>", '리스크관리형', '장기']);
+
+          data.push(['13', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000806' />", '성장중기', "<span class='t_red'>113.18%</span>", "<span class='t_blue'>-5.96%</span>", "<span class='t_blue'>-1.51%</span>", "<span class='t_blue'>-5.35%</span>", '시장주도형', '단기']);
+
+          data.push(['14', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000767' />", '장수단기', "<span class='t_red'>111.40%</span>", "<span class='t_blue'>-13.33%</span>", "<span class='t_red'>2.42%</span>", "<span class='t_red'>4.49%</span>", '시장주도형', '단기']);
+
+          data.push(['15', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000760' />", '대박단기', "<span class='t_red'>99.72%</span>", "<span class='t_blue'>-0.51%</span>", "<span class='t_red'>20.32%</span>", "<span class='t_red'>10.75%</span>", '시장주도형', '단기']);
+
+          data.push(['16', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000769' />", '대지중기', "<span class='t_red'>96.12%</span>", "<span class='t_red'>3.68%</span>", "<span class='t_red'>22.42%</span>", "<span class='t_red'>32.03%</span>", '추종형', '중기']);
+
+          data.push(['17', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000765' />", '불꽃단기', "<span class='t_red'>85.10%</span>", "<span class='t_blue'>-11.26%</span>", "<span class='t_red'>11.31%</span>", "<span class='t_red'>11.75%</span>", '시장주도형', '단기']);
+
+          data.push(['18', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000763' />", '태양단기', "<span class='t_red'>70.90%</span>", "<span class='t_blue'>-10.67%</span>", "<span class='t_red'>11.42%</span>", "<span class='t_red'>1.64%</span>", '시장주도형', '단기']);
+
+          data.push(['19', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000804' />", '벼락중기', "<span class='t_red'>57.37%</span>", "<span class='t_blue'>-13.97%</span>", "<span class='t_red'>7.40%</span>", "<span class='t_red'>25.60%</span>", '추종형', '중기']);
+
+          data.push(['20', "<input type='radio' name='rdoPms_code' id='rdoPms_code' value='00000759' />", '리치단기', "<span class='t_red'>53.81%</span>", "<span class='t_blue'>-6.80%</span>", "<span class='t_red'>13.76%</span>", "<span class='t_red'>6.83%</span>", '시장주도형', '단기']);
+
+          var fixedcolumn = 2;
+          var displaycolumn = 4;
+          var scrolldata = {
+            //** 표시는 체크 필수
+            //기본 셋팅 관련
+            targetid: 'divGrid', //** 스크롤 적용시킬 div아이디
+            scrolldata: data, //** 사용할 데이터
+            pullendaction: 'pullUpAction', //데이터 마지막에서 실행할 함수명
+            clickaction: 'showdata', //클릭시 실행할 함수명
+
+            //View위한 템플릿 관련
+            headertemplate: 'headerTemplate', //헤더 템플릿 ID
+            contentstemplate: 'contentsTemplate', //컨텐츠 템플릿 ID
+
+            fixedcolumn: fixedcolumn, //고정열개수(0:좌측고정 없이 좌우스크롤,1 ~ 컬럼수 가능)
+            displaycolumn: displaycolumn, //화면에 보일 열개수(고정열수+1 ~ 컬럼수 가능)
+          };
+          kb.widget.scroll(scrolldata);
+        }
+        document.addEventListener('DOMContentLoaded', init, false);
+      </script>
+      <div id="page">
+        <div id="tab_warp">
+          <div class="tab_h2">
+            <ul>
+              <li>
+                <a class="t01" href="javascript:callMBMain();">
+                  <img style="width: 100%" src="img/tab_q_01.jpg" alt="퀀트전략소개" />
+                </a>
+              </li>
+              <li>
+                <a class="t02_on" href="javascript:callMBListMain();">
+                  <img style="width: 100%" src="img/tab_q_02_on.jpg" alt="퀀트전략선정" />
+                </a>
+              </li>
+              <li>
+                <a class="t03" href="javascript:callMBMyMain();">
+                  <img style="width: 100%" src="img/tab_q_03.jpg" alt="나의 퀀트" />
+                </a>
+              </li>
+              <li>
+                <a class="t04" href="javascript:callMBSELLogic();">
+                  <img style="width: 100%" src="img/tab_q_04.jpg" alt="퀀트포트폴리오" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="btn_area_01">
+          <a href="javascript:setMBMainLogic();"><img src="img/btn_live_signal_05.jpg" width="278.4" height="44.8" /></a>
+        </div>
+
+        <div class="align_box">정렬순서</div>
+
+        <div id="flow_list_01" style="display: none">
+          <ul>
+            <li><a href="#">총수익률</a></li>
+            <li><a href="#">수익률(1개월)</a></li>
+            <li><a href="#">수익률(3개월)</a></li>
+            <li><a href="#">수익률(6개월)</a></li>
+            <li><a href="#">유형</a></li>
+            <li><a href="#">투자기간</a></li>
+            <li class="btn_area">
+              <a href="#" onclick="showLayer('flow_list_01')"><img src="img/btn_close.jpg" width="60" height="26" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="align_list" onclick="showLayer('flow_list_01')" style="cursor: pointer">총수익률</div>
+        <!-- 컨텐츠영역 /S -->
+        <div id="contents" class="contents">
+          <!-- 스크롤 적용 테이블 /S -->
+          <div id="divGrid_leftarrow" style="position: absolute; z-index: 3; display: table-cell; vertical-align: middle; display: none"><img src="img/arrow_left.png" border="0" align="absmiddle" /></div>
+          <div id="divGrid_rightarrow" style="position: absolute; z-index: 3; display: table-cell; vertical-align: middle; display: none"><img src="img/arrow_right.png" border="0" align="absmiddle" /></div>
+          <div id="divGrid">
+            <div id="divGrid_fixedHeader" style="position: relative; float: left; background: rgb(255, 255, 255); border-width: 1px 1px medium medium; border-style: solid solid none none; border-color: rgb(170, 170, 170) rgb(170, 170, 170) currentcolor currentcolor; border-image: initial; overflow: hidden; width: 527px">
+              <table width="100%" class="c-table-post">
+                <colgroup>
+                  <col width="234px" />
+                  <col width="293px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>순위</th>
+                    <th>선택</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div id="divGrid_flexableHeader" style="position: relative; overflow: auto hidden; float: left; background: rgb(255, 255, 255); border-width: 1px medium medium; border-style: solid none none; border-color: rgb(170, 170, 170) currentcolor currentcolor; border-image: initial; width: 794px">
+              <div style="width: 2403px">
+                <table width="100%" class="c-table-post">
+                  <colgroup>
+                    <col width="499px" />
+                    <col width="293px" />
+                    <col width="293px" />
+                    <col width="293px" />
+                    <col width="293px" />
+                    <col width="440px" />
+                    <col width="293px" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>퀀트 전략명</th>
+                      <th>총수익률</th>
+                      <th>
+                        수익률<br />
+                        1개월
+                      </th>
+                      <th>
+                        수익률<br />
+                        3개월
+                      </th>
+                      <th>
+                        수익률<br />
+                        6개월
+                      </th>
+                      <th>유형</th>
+                      <th>투자기간</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+            <div id="divGrid_fixedWrapper" style="position: relative; overflow: auto; float: left; background: rgb(255, 255, 255); border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(170, 170, 170); border-image: initial; clear: both; width: 528px">
+              <div>
+                <table width="100%" class="c-table-post" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial">
+                  <colgroup>
+                    <col width="234px" />
+                    <col width="293px" />
+                  </colgroup>
+                  <tbody>
+                    <tr class="row1" style="height: 35px">
+                      <td>1</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000805" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>2</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000762" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>3</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000755" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>4</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000766" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>5</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000768" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>6</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000764" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>7</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000756" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>8</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000761" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>9</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000802" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>10</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000758" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>11</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000757" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>12</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000803" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>13</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000806" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>14</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000767" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>15</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000760" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>16</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000769" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>17</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000765" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>18</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000763" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>19</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000804" /></td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td>20</td>
+                      <td><input type="radio" name="rdoPms_code" id="rdoPms_code" value="00000759" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="divGrid_flexableWrapper" style="position: relative; overflow: auto; float: left; background: rgb(255, 255, 255); border-width: medium medium 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(170, 170, 170); border-image: initial; width: 794px">
+              <div style="width: 2403px">
+                <table width="100%" class="c-table-post" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial">
+                  <colgroup></colgroup>
+                  <tbody>
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">안정중기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">263.63%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-15.75%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-6.59%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-11.53%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">황소단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">262.34%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-1.99%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">24.07%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">32.30%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">리치장기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">256.53%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-7.20%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">3.91%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">0.05%</span></td>
+                      <td>리스크관리형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">중기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">생명단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">255.08%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-3.60%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">18.13%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">20.51%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">광산단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">242.36%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-4.96%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">18.07%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">37.73%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">수정단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">188.00%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-1.19%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">21.46%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">24.54%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">대박장기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">174.77%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">4.12%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">38.38%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">30.34%</span></td>
+                      <td>리스크관리형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">중기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">용꿈단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">167.91%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-4.17%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">18.26%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">27.07%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">금돈중기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">160.46%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-8.09%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">4.14%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">0.14%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">황소장기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">159.81%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-2.04%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">16.06%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">22.29%</span></td>
+                      <td>리스크관리형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">중기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">용꿈장기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">145.49%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-12.73%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-0.89%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">7.41%</span></td>
+                      <td>리스크관리형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">중기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">철벽장기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">132.89%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-5.02%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">31.30%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">39.29%</span></td>
+                      <td>리스크관리형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">장기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">성장중기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">113.18%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-5.96%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-1.51%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-5.35%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">장수단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">111.40%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-13.33%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">2.42%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">4.49%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">대박단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">99.72%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-0.51%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">20.32%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">10.75%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">대지중기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">96.12%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">3.68%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">22.42%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">32.03%</span></td>
+                      <td>추종형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">중기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">불꽃단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">85.10%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-11.26%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">11.31%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">11.75%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">태양단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">70.90%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-10.67%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">11.42%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">1.64%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">벼락중기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">57.37%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-13.97%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">7.40%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">25.60%</span></td>
+                      <td>추종형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">중기</td>
+                    </tr>
+
+                    <tr class="row1" style="height: 35px">
+                      <td class="q_align_left"><a style="text-decoration: none" href="#">리치단기</a></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">53.81%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_blue">-6.80%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">13.76%</span></td>
+                      <td class="t_red" style="text-align: right; padding-right: 3px"><span class="t_red">6.83%</span></td>
+                      <td>시장주도형</td>
+                      <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">단기</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <p><!-- 스크롤 적용 테이블 /E --></p>
+        </div>
+        <!-- 템플릿 영역 /S -->
+        <div style="display: none">
+          <!-- 헤더 템플릿 영역 /S -->
+          <div id="headerTemplate">
+            <table width="100%" class="c-table-post">
+              <colgroup>
+                <col width="234px" />
+                <col width="293px" />
+                <col width="499px" />
+                <col width="293px" />
+                <col width="293px" />
+                <col width="293px" />
+                <col width="293px" />
+                <col width="440px" />
+                <col width="293px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>순위</th>
+                  <th>선택</th>
+                  <th>퀀트 전략명</th>
+                  <th>총수익률</th>
+                  <th>
+                    수익률<br />
+                    1개월
+                  </th>
+                  <th>
+                    수익률<br />
+                    3개월
+                  </th>
+                  <th>
+                    수익률<br />
+                    6개월
+                  </th>
+                  <th>유형</th>
+                  <th>투자기간</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- 헤더 템플릿 영역 /E -->
+
+          <!-- 컨텐츠 템플릿 영역 /S -->
+          <div id="contentsTemplate">
+            <table width="100%" class="c-table-post">
+              <colgroup>
+                <col width="234px" />
+                <col width="293px" />
+              </colgroup>
+              <tbody>
+                <tr class="row1" style="height: 35px">
+                  <td>{0}</td>
+                  <td>{1}</td>
+                  <td class="q_align_left"><a style="text-decoration: none" href="#">{2}</a></td>
+                  <td class="t_red" style="text-align: right; padding-right: 3px">{3}</td>
+                  <td class="t_red" style="text-align: right; padding-right: 3px">{4}</td>
+                  <td class="t_red" style="text-align: right; padding-right: 3px">{5}</td>
+                  <td class="t_red" style="text-align: right; padding-right: 3px">{6}</td>
+                  <td>{7}</td>
+                  <td style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor">{8}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <script>
+          // 1. 해당 .c-table-post 요소를 선택합니다.
+          const tablePost = document.querySelectorAll('.c-table-post')[1]; // 세 번째 .c-table-post를 선택합니다 (인덱스 2를 사용).
+          console.log('******');
+          console.log(tablePost);
+
+          if (tablePost) {
+            // 선택한 요소가 존재하는지 확인합니다.
+            // 2. 해당 .c-table-post 요소에서 colgroup을 선택합니다.
+            const colgroup = tablePost.querySelector('colgroup');
+
+            if (colgroup) {
+              // colgroup이 존재하는지 확인합니다.
+              // 3. colgroup의 모든 col 요소를 선택합니다.
+              const colElements = colgroup.querySelectorAll('col');
+
+              // 4. 3번째 col부터 8번째 col까지 삭제합니다.
+              for (let i = 2; i <= 7; i++) {
+                if (colElements[i]) {
+                  // 해당 인덱스의 col 요소가 존재하는지 확인합니다.
+                  colgroup.removeChild(colElements[i]);
+                }
+              }
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

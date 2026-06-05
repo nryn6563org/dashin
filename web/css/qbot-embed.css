@@ -1,0 +1,414 @@
+/* qbot-embed: 네임스페이스 스코프 번들 (common.css + guide.css) */
+
+/* ===== common.css ===== */
+.qbot-embed, .qbot-embed * {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed {OVERFLOW-X: auto; OVERFLOW-Y: scroll; _overflow: scroll; _overflow-x: auto}
+.qbot-embed {POSITION: relative; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: 돋움, Dotum, Arial, sans-serif; BACKGROUND: #fff; HEIGHT: 100%; COLOR: #898989; FONT-SIZE: 12px; PADDING-TOP: 0p}
+.qbot-embed IMG {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.qbot-embed FIELDSET {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.qbot-embed LEGEND {POSITION: absolute; LINE-HEIGHT: 0; WIDTH: 1px; DISPLAY: none; HEIGHT: 1px; FONT-SIZE: 0px; OVERFLOW: hidden; TOP: 0px; LEFT: -1000%}
+.qbot-embed CAPTION {POSITION: absolute; LINE-HEIGHT: 0; WIDTH: 1px; DISPLAY: none; HEIGHT: 1px; FONT-SIZE: 0px; OVERFLOW: hidden; TOP: 0px; LEFT: -1000%}
+.qbot-embed HR {POSITION: absolute; LINE-HEIGHT: 0; WIDTH: 1px; DISPLAY: none; HEIGHT: 1px; FONT-SIZE: 0px; OVERFLOW: hidden; TOP: 0px; LEFT: -1000%}
+.qbot-embed TEXTAREA {BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.3; PADDING-LEFT: 2px; PADDING-RIGHT: 0px; FONT-FAMILY: 돋움, Dotum, Arial, sans-serif; COLOR: #666; FONT-SIZE: 12px; BORDER-TOP: #d7d7d7 1px solid; BORDER-RIGHT: #d7d7d7 1px solid; PADDING-TOP: 2px}
+.qbot-embed P {FONT-FAMILY: 돋움, Dotum, Arial, sans-serif}
+.qbot-embed INPUT {FONT-FAMILY: 돋움, Dotum, Arial, sans-serif}
+.qbot-embed BUTTON {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 13px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: 돋움, Dotum, Arial, sans-serif; BACKGROUND: none transparent scroll repeat 0% 0%; FONT-SIZE: 11px; OVERFLOW: visible; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed UL {LIST-STYLE-TYPE: none}
+.qbot-embed OL {LIST-STYLE-TYPE: none}
+.qbot-embed DT {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed DD {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed H1 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed H2 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed H3 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed H4 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed H5 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed H6 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed ADDRESS {FONT-STYLE: normal}
+.qbot-embed EM {FONT-STYLE: normal}
+.qbot-embed TABLE {BORDER-COLLAPSE: collapse !important; FONT-FAMILY: 돋움, Dotum, Arial, sans-serif; FONT-SIZE: 12px}
+.qbot-embed A {COLOR: #898989; TEXT-DECORATION: none !important}
+.qbot-embed A:link {COLOR: #898989; TEXT-DECORATION: none}
+.qbot-embed A:visited {	COLOR: #898989; TEXT-DECORATION: none}
+.qbot-embed A:hover {COLOR: #898989; TEXT-DECORATION: underline}
+.qbot-embed A:focus {COLOR: #898989; TEXT-DECORATION: underline}
+.qbot-embed A:active {COLOR: #898989; TEXT-DECORATION: none}
+.qbot-embed .iePngFix {	_behavior: url(/partner/js/iepngfix.htc)}
+.qbot-embed .iePngFix A {_behavior: url(/partner/js/iepngfix.htc)}
+.qbot-embed .pointer {CURSOR: pointer}
+.qbot-embed .blind {POSITION: absolute; LINE-HEIGHT: 0; WIDTH: 1px; FONT-SIZE: 0px; OVERFLOW: hidden; TOP: 0px; LEFT: -1000%; heght: 1px}
+.qbot-embed #accessibility {POSITION: absolute; LINE-HEIGHT: 0; WIDTH: 1px; FONT-SIZE: 0px; OVERFLOW: hidden; TOP: 0px; LEFT: -1000%; heght: 1px}
+.qbot-embed .bd {BORDER-BOTTOM: red 1px solid; BORDER-LEFT: red 1px solid; BORDER-TOP: red 1px solid; BORDER-RIGHT: red 1px solid}
+.qbot-embed .after {WIDTH: auto}
+.qbot-embed .after:after {DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ""}
+.qbot-embed .fl {FLOAT: left !important}
+.qbot-embed .fr {FLOAT: right !important}
+.qbot-embed .cl {CLEAR: both !important}
+.qbot-embed .al {TEXT-ALIGN: left !important}
+.qbot-embed .ac {TEXT-ALIGN: center !important}
+.qbot-embed .ar {TEXT-ALIGN: right !important}
+.qbot-embed .vt {VERTICAL-ALIGN: top !important}
+.qbot-embed .vm {VERTICAL-ALIGN: middle !important}
+.qbot-embed .vb {VERTICAL-ALIGN: bottom !important}
+.qbot-embed .rela {POSITION: relative}
+.qbot-embed .absolute {POSITION: absolute}
+.qbot-embed .fixed {POSITION: fixed}
+.qbot-embed .f11 {FONT-SIZE: 11px !important}
+.qbot-embed .f12 {FONT-SIZE: 12px !important}
+.qbot-embed .f13 {FONT-SIZE: 13px}
+.qbot-embed .f14 {FONT-SIZE: 14px}
+.qbot-embed .f15 {FONT-SIZE: 15px}
+.qbot-embed .f16 {FONT-SIZE: 16px}
+.qbot-embed .normal {FONT-WEIGHT: normal !important}
+.qbot-embed .bold {FONT-WEIGHT: bold}
+.qbot-embed .underline {TEXT-DECORATION: underline}
+.qbot-embed .ls0 {LETTER-SPACING: 0px !important}
+.qbot-embed .ls1 {LETTER-SPACING: -1px !important}
+.qbot-embed .ls2 {LETTER-SPACING: -2px !important}
+.qbot-embed .line0 {LINE-HEIGHT: 0 !important}
+.qbot-embed .line12 {LINE-HEIGHT: 12px !important}
+.qbot-embed .line13 {LINE-HEIGHT: 13px !important}
+.qbot-embed .line14 {LINE-HEIGHT: 14px !important}
+.qbot-embed .line15 {LINE-HEIGHT: 15px !important}
+.qbot-embed .line16 {LINE-HEIGHT: 16px !important}
+.qbot-embed .line17 {LINE-HEIGHT: 17px !important}
+.qbot-embed .line18 {LINE-HEIGHT: 18px !important}
+.qbot-embed .line19 {LINE-HEIGHT: 19px !important}
+.qbot-embed .line20 {LINE-HEIGHT: 20px !important}
+.qbot-embed .olive {COLOR: #83a139}
+.qbot-embed .greenW {COLOR: #73ab32}
+.qbot-embed .blueW {COLOR: #6881a2}
+.qbot-embed .pink {COLOR: #d96c7e}
+.qbot-embed .violet {COLOR: #9a87c0}
+.qbot-embed .red {COLOR: #ec4b2a}
+.qbot-embed .redPrice {COLOR: #ec4b2a}
+.qbot-embed .gray898989 {COLOR: #898989 !important}
+.qbot-embed .gray222 {COLOR: #222222 !important}
+.qbot-embed .gray222 A {COLOR: #222222 !important}
+.qbot-embed .gray222 A:link {COLOR: #222222 !important}
+.qbot-embed .gray222 A:visited {COLOR: #222222 !important}
+.qbot-embed .gray222 A:active {COLOR: #222222 !important}
+.qbot-embed .gray222 A:hover {COLOR: #222222 !important; TEXT-DECORATION: underline}
+.qbot-embed .gray222 A:focus {COLOR: #222222 !important; TEXT-DECORATION: underline}
+.qbot-embed .dotum {FONT-FAMILY: 돋움, Dotum, Sans-serif !important}
+.qbot-embed .arial {FONT-FAMILY: Arial, 돋움, Sans-serif !important}
+.qbot-embed .p0 {PADDING-BOTTOM: 0px !important; PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important; PADDING-TOP: 0px !important}
+.qbot-embed .p10 {PADDING-BOTTOM: 10px !important; PADDING-LEFT: 10px !important; PADDING-RIGHT: 10px !important; PADDING-TOP: 10px !important}
+.qbot-embed .pt1 {PADDING-TOP: 1px !important}
+.qbot-embed .pt2 {PADDING-TOP: 2px !important}
+.qbot-embed .pt4 {PADDING-TOP: 4px !important}
+.qbot-embed .pt5 {PADDING-TOP: 5px !important}
+.qbot-embed .pt8 {PADDING-TOP: 8px !important}
+.qbot-embed .pt10 {PADDING-TOP: 10px !important}
+.qbot-embed .pt14 {PADDING-TOP: 14px !important}
+.qbot-embed .pt15 {PADDING-TOP: 15px !important}
+.qbot-embed .pt20 {PADDING-TOP: 20px !important}
+.qbot-embed .pt25 {PADDING-TOP: 25px !important}
+.qbot-embed .pt30 {PADDING-TOP: 30px !important}
+.qbot-embed .pt40 {PADDING-TOP: 40px !important}
+.qbot-embed .pt45 {PADDING-TOP: 45px !important}
+.qbot-embed .pt60 {PADDING-TOP: 60px !important}
+.qbot-embed .pt75 {PADDING-TOP: 75px !important}
+.qbot-embed .pb0 {PADDING-BOTTOM: 0px !important}
+.qbot-embed .pb2 {PADDING-BOTTOM: 2px !important}
+.qbot-embed .pb4 {PADDING-BOTTOM: 4px !important}
+.qbot-embed .pb5 {PADDING-BOTTOM: 5px !important}
+.qbot-embed .pb8 {PADDING-BOTTOM: 8px !important}
+.qbot-embed .pb10 {PADDING-BOTTOM: 10px !important}
+.qbot-embed .pb14 {PADDING-BOTTOM: 14px !important}
+.qbot-embed .pb15 {PADDING-BOTTOM: 15px !important}
+.qbot-embed .pb18 {PADDING-BOTTOM: 18px !important}
+.qbot-embed .pb20 {PADDING-BOTTOM: 20px !important}
+.qbot-embed .pb30 {PADDING-BOTTOM: 30px !important}
+.qbot-embed .pb40 {PADDING-BOTTOM: 40px !important}
+.qbot-embed .pb50 {PADDING-BOTTOM: 50px !important}
+.qbot-embed .pb60 {PADDING-BOTTOM: 60px !important}
+.qbot-embed .pb65 {PADDING-BOTTOM: 65px !important}
+.qbot-embed .pb75 {PADDING-BOTTOM: 75px !important}
+.qbot-embed .pb80 {PADDING-BOTTOM: 80px !important}
+.qbot-embed .pl0 {PADDING-LEFT: 0px !important}
+.qbot-embed .pl5 {PADDING-LEFT: 5px !important}
+.qbot-embed .pl8 {PADDING-LEFT: 8px !important}
+.qbot-embed .pl10 {PADDING-LEFT: 10px !important}
+.qbot-embed .pl15 {PADDING-LEFT: 15px !important}
+.qbot-embed .pl20 {PADDING-LEFT: 20px !important}
+.qbot-embed .pl30 {PADDING-LEFT: 30px !important}
+.qbot-embed .pl40 {PADDING-LEFT: 40px !important}
+.qbot-embed .pl45 {PADDING-LEFT: 45px !important}
+.qbot-embed .pl75 {PADDING-LEFT: 75px !important}
+.qbot-embed .pl90 {PADDING-LEFT: 90px !important}
+.qbot-embed .pr0 {PADDING-RIGHT: 0px !important}
+.qbot-embed .pr10 {PADDING-RIGHT: 10px !important}
+.qbot-embed .pr15 {PADDING-RIGHT: 15px !important}
+.qbot-embed .pr20 {PADDING-RIGHT: 20px !important}
+.qbot-embed .pr30 {PADDING-RIGHT: 30px !important}
+.qbot-embed .m0 {MARGIN: 0px}
+.qbot-embed .mt0 {MARGIN-TOP: 0px !important}
+.qbot-embed .mt1 {MARGIN-TOP: 1px !important}
+.qbot-embed .mt2 {MARGIN-TOP: 2px !important}
+.qbot-embed .mt3 {MARGIN-TOP: 3px !important}
+.qbot-embed .mt4 {MARGIN-TOP: 4px !important}
+.qbot-embed .mt5 {MARGIN-TOP: 5px;_MARGIN-TOP: 0px  !important}
+.qbot-embed .mt8 {MARGIN-TOP: 8px !important}
+.qbot-embed .mt10 {MARGIN-TOP: 10px  !important}
+.qbot-embed .mt12 {MARGIN-TOP: 12px !important}
+.qbot-embed .mt14 {MARGIN-TOP: 14px !important}
+.qbot-embed .mt15 {MARGIN-TOP: 15px !important}
+.qbot-embed .mt17 {MARGIN-TOP: 17px !important}
+.qbot-embed .mt18 {MARGIN-TOP: 18px !important}
+.qbot-embed .mt20 {MARGIN-TOP: 20px !important}
+.qbot-embed .mt23 {MARGIN-TOP: 23px !important}
+.qbot-embed .mt24 {MARGIN-TOP: 24px !important}
+.qbot-embed .mt25 {MARGIN-TOP: 25px !important}
+.qbot-embed .mt29 {MARGIN-TOP: 29px !important}
+.qbot-embed .mt30 {MARGIN-TOP: 30px !important}
+.qbot-embed .mt35 {MARGIN-TOP: 35px !important}
+.qbot-embed .mt39 {MARGIN-TOP: 39px !important}
+.qbot-embed .mt40 {MARGIN-TOP: 40px !important}
+.qbot-embed .mt45 {MARGIN-TOP: 45px !important}
+.qbot-embed .mt50 {MARGIN-TOP: 50px !important}
+.qbot-embed .mt54 {MARGIN-TOP: 54px !important}
+.qbot-embed .mt55 {MARGIN-TOP: 55px !important}
+.qbot-embed .mt57 {MARGIN-TOP: 57px !important}
+.qbot-embed .mt60 {MARGIN-TOP: 60px !important}
+.qbot-embed .mt70 {MARGIN-TOP: 70px !important}
+.qbot-embed .mt79 {MARGIN-TOP: 79px !important}
+.qbot-embed .mt85 {MARGIN-TOP: 85px !important}
+.qbot-embed .mt110 {MARGIN-TOP: 110px !important}
+.qbot-embed .mt145 {MARGIN-TOP: 145px !important}
+.qbot-embed .mt_5 {MARGIN-TOP: -5px !important}
+.qbot-embed .mt_10 {MARGIN-TOP: -10px !important}
+.qbot-embed .mt_15 {MARGIN-TOP: -15px !important}
+.qbot-embed .mt_20 {MARGIN-TOP: -20px !important}
+.qbot-embed .mt_25 {MARGIN-TOP: -25px !important}
+.qbot-embed .mt_30 {MARGIN-TOP: -30px !important}
+.qbot-embed .mt_35 {MARGIN-TOP: -35px !important}
+.qbot-embed .mt_45 {MARGIN-TOP: -45px !important}
+.qbot-embed .mt_80 {MARGIN-TOP: -80px !important}
+.qbot-embed .mb0 {MARGIN-BOTTOM: 0px !important}
+.qbot-embed .mb2 {MARGIN-BOTTOM: 2px !important}
+.qbot-embed .mb4 {MARGIN-BOTTOM: 4px !important}
+.qbot-embed .mb5 {MARGIN-BOTTOM: 5px !important}
+.qbot-embed .mb7 {MARGIN-BOTTOM: 7px !important}
+.qbot-embed .mb8 {MARGIN-BOTTOM: 8px !important}
+.qbot-embed .mb10 {MARGIN-BOTTOM: 10px !important}
+.qbot-embed .mb15 {MARGIN-BOTTOM: 15px !important}
+.qbot-embed .mb20 {MARGIN-BOTTOM: 20px !important}
+.qbot-embed .mb25 {MARGIN-BOTTOM: 25px !important}
+.qbot-embed .mb29 {MARGIN-BOTTOM: 29px !important}
+.qbot-embed .mb30 {MARGIN-BOTTOM: 30px !important}
+.qbot-embed .mb35 {MARGIN-BOTTOM: 35px !important}
+.qbot-embed .mb39 {MARGIN-BOTTOM: 39px !important}
+.qbot-embed .mb40 {MARGIN-BOTTOM: 40px !important}
+.qbot-embed .mb50 {MARGIN-BOTTOM: 50px !important}
+.qbot-embed .mb60 {MARGIN-BOTTOM: 60px !important}
+.qbot-embed .ml0 {MARGIN-LEFT: 0px !important}
+.qbot-embed .ml1 {MARGIN-LEFT: 1px !important}
+.qbot-embed .ml2 {MARGIN-LEFT: 2px !important}
+.qbot-embed .ml3 {MARGIN-LEFT: 3px !important}
+.qbot-embed .ml5 {MARGIN-LEFT: 5px !important}
+.qbot-embed .ml6 {MARGIN-LEFT: 6px !important}
+.qbot-embed .ml7 {MARGIN-LEFT: 7px !important}
+.qbot-embed .ml8 {MARGIN-LEFT: 8px !important}
+.qbot-embed .ml10 {MARGIN-LEFT: 10px !important}
+.qbot-embed .ml11 {MARGIN-LEFT: 11px !important}
+.qbot-embed .ml12 {MARGIN-LEFT: 12px !important}
+.qbot-embed .ml14 {MARGIN-LEFT: 14px !important}
+.qbot-embed .ml15 {MARGIN-LEFT: 15px !important}
+.qbot-embed .ml17 {MARGIN-LEFT: 17px !important}
+.qbot-embed .ml18 {MARGIN-LEFT: 18px !important}
+.qbot-embed .ml20 {MARGIN-LEFT: 20px !important}
+.qbot-embed .ml23 {MARGIN-LEFT: 23px !important}
+.qbot-embed .ml24 {MARGIN-LEFT: 24px !important}
+.qbot-embed .ml25 {MARGIN-LEFT: 25px !important}
+.qbot-embed .ml30 {MARGIN-LEFT: 30px !important}
+.qbot-embed .ml32 {MARGIN-LEFT: 32px !important}
+.qbot-embed .ml35 {MARGIN-LEFT: 35px !important}
+.qbot-embed .ml40 {MARGIN-LEFT: 40px !important}
+.qbot-embed .ml45 {MARGIN-LEFT: 45px !important}
+.qbot-embed .ml50 {MARGIN-LEFT: 50px !important}
+.qbot-embed .ml52 {MARGIN-LEFT: 52px !important}
+.qbot-embed .ml59 {MARGIN-LEFT: 59px !important}
+.qbot-embed .ml60 {MARGIN-LEFT: 60px !important}
+.qbot-embed .ml64 {MARGIN-LEFT: 64px !important}
+.qbot-embed .ml90 {MARGIN-LEFT: 90px !important}
+.qbot-embed .ml205 {MARGIN-LEFT: 205px !important}
+.qbot-embed .mr0 {MARGIN-RIGHT: 0px !important}
+.qbot-embed .mr2 {MARGIN-RIGHT: 2px !important}
+.qbot-embed .mr4 {MARGIN-RIGHT: 4px !important}
+.qbot-embed .mr5 {MARGIN-RIGHT: 5px !important}
+.qbot-embed .mr7 {MARGIN-RIGHT: 7px !important}
+.qbot-embed .mr10 {MARGIN-RIGHT: 10px !important}
+.qbot-embed .mr15 {MARGIN-RIGHT: 15px !important}
+.qbot-embed .mr17 {MARGIN-RIGHT: 17px !important}
+.qbot-embed .mr20 {MARGIN-RIGHT: 20px !important}
+.qbot-embed .mr30 {MARGIN-RIGHT: 30px !important}
+.qbot-embed .mr35 {MARGIN-RIGHT: 35px !important}
+.qbot-embed .mr40 {MARGIN-RIGHT: 40px !important}
+.qbot-embed .mr45 {MARGIN-RIGHT: 45px !important}
+.qbot-embed .mr52 {MARGIN-RIGHT: 52px !important}
+.qbot-embed .mr60 {MARGIN-RIGHT: 60px !important}
+.qbot-embed .mr80 {MARGIN-RIGHT: 80px !important}
+.qbot-embed INPUT {BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; HEIGHT: 16px; COLOR: #666; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #d7d7d7 1px solid; BORDER-RIGHT: #d7d7d7 1px solid; PADDING-TOP: 2px}
+.qbot-embed INPUT.radio {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 4px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed INPUT.checkbox {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; MARGIN-RIGHT: 4px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+.qbot-embed INPUT.file {WIDTH: 400px; BACKGROUND: #fff; HEIGHT: 20px !important}
+.qbot-embed .combo {	BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 18px; COLOR: #222222; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; BORDER-TOP: #d7d7d7 1px solid; BORDER-RIGHT: #d7d7d7 1px solid; PADDING-TOP: 0px}
+.qbot-embed .ra_ch {PADDING-BOTTOM: 0px; MARGIN: 0px 0px 2px; PADDING-LEFT: 0px; WIDTH: 13px; PADDING-RIGHT: 0px; HEIGHT: 13px; VERTICAL-ALIGN: middle; PADDING-TOP: 0px}
+.qbot-embed SELECT {BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 1.2; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; FONT-FAMILY: "돋움", Dotum, Arial, Sans-serif; HEIGHT: 20px; COLOR: #666; FONT-SIZE: 1em; VERTICAL-ALIGN: middle; BORDER-TOP: #d7d7d7 1px solid; BORDER-RIGHT: #d7d7d7 1px solid; PADDING-TOP: 1px}
+.qbot-embed #selectBox {Z-INDEX: 200; POSITION: absolute; TOP: 15px; RIGHT: 0px}
+.qbot-embed #selectBox SELECT {BORDER-BOTTOM-COLOR: #686868; BORDER-TOP-COLOR: #686868; WIDTH: 110px; BACKGROUND: #686868; LETTER-SPACING: 0px; HEIGHT: 18px; COLOR: #fff; BORDER-RIGHT-COLOR: #686868; FONT-SIZE: 11px; BORDER-LEFT-COLOR: #686868}
+.qbot-embed .tabArea {POSITION: relative; WIDTH: auto}
+.qbot-embed .tabArea:after {DISPLAY: block; CLEAR: both; CONTENT: ""}
+.qbot-embed .tabArea UL {WIDTH: 100%; BACKGROUND: url(../images/bg_tab.gif) repeat-x 0px 0px; FLOAT: left; HEIGHT: 33px; OVERFLOW: hidden}
+.qbot-embed .tabArea UL LI {FLOAT: left}
+.qbot-embed .tabArea UL LI.first A {BACKGROUND: none transparent scroll repeat 0% 0%}
+.qbot-embed .tabArea UL LI A {PADDING-BOTTOM: 8px; PADDING-LEFT: 21px; PADDING-RIGHT: 21px; DISPLAY: inline-block; BACKGROUND: url(../images/bar_tab.gif) no-repeat 0px center; PADDING-TOP: 10px}
+.qbot-embed .tabArea UL LI A.on {BORDER-BOTTOM: 0px; BORDER-LEFT: #da2f5b 2px solid; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #fff; BORDER-TOP: #da2f5b 2px solid; BORDER-RIGHT: #da2f5b 2px solid}
+.qbot-embed P.tip {MARGIN-TOP: 20px; PADDING-LEFT: 20px; BACKGROUND: url(/images/richq/ico_!.gif) no-repeat 0px 0px}
+
+/* ===== guide.css ===== */
+.qbot-embed #wrap {MIN-HEIGHT: 100%; WIDTH: 1012px; height: 675px;POSITION: relative;}
+.qbot-embed H1 {WIDTH: 200px; FLOAT: left}
+.qbot-embed #header {PADDING-TOP: 0px;WIDTH: 100%; HEIGHT: 50px; background-color:#e8e8ea}
+.qbot-embed #container { WIDTH: 1012px; height:655px; background-color:#e5e5e5;}
+.qbot-embed #container #snb {float:left; width: 190px; height:643px; margin-left:10px;  border: 1px solid #ccc; background-color:#FFF; overflow:hidden; padding:0 10px;}
+.qbot-embed #container #right_con {float:left;position:relative; width:750px; padding:10px;height:623px; border: 1px solid #ccc; background-color:#FFFFFF; margin-left:9px; overflow:hidden;}
+.qbot-embed .top_tit {padding: 20px 0 0 10px}
+
+.qbot-embed #snb .lst_menu {padding:10px 0 0}
+.qbot-embed #snb .lst_menu ul {padding:0 0 0 8px}
+.qbot-embed #snb .lst_menu li {border-bottom:1px solid #e5e5e5; padding-left:12px; background:url(../images/bu_10.gif) no-repeat 8px 18px}
+.qbot-embed #snb .lst_menu li a {display:block;overflow:hidden;padding:15px 0 4px 10px;color:#333; font-size:14px;text-decoration:none}
+.qbot-embed #snb .lst_menu li a:hover, .qbot-embed #snb .lst_menu li a.on {font-weight:bold;letter-spacing:-1px; color:#F00}
+.qbot-embed .group_tit {position:relative;height:25px;margin-bottom:3px;padding-top:12px; padding-left:10px}
+.qbot-embed .group_tit h3 {display:inline;font-size:18px;font-weight:bold;line-height:20px; color:#222}
+.qbot-embed .group_tit h3 span {font-size:12px; color:#666; font-weight:normal}
+.qbot-embed .group_tit .r_area {position:absolute;right:0;top:7px}
+.qbot-embed .group_tit .r_area img {margin-left:2px;vertical-align:top}
+.qbot-embed .group_tit .r_area .date {display:inline-block;padding:4px 7px 0 0;color:#999}
+
+.qbot-embed .vod_ban {position:absolute; bottom:-10px}
+
+.qbot-embed .bbs_list {padding-bottom:17px}
+.qbot-embed .bbs_list table {width:100%;margin-bottom:5px;border-bottom:1px solid #d5d6d9}
+.qbot-embed .bbs_list th {height:27px;padding-top:3px;border:solid #d5d6d9;border-width:1px 0;background:#f9f9f9;color:#666;font-size:12px; font-weight:normal}
+.qbot-embed .bbs_list td {padding:7px 0 6px 15px;border-top:1px solid #f2f2f2;background:#fff; line-height:17px; font-size:12px; color:#777}
+.qbot-embed .bbs_list td a {color:#333; font-size:12px}
+.qbot-embed .bbs_list td.l {text-align:left}
+.qbot-embed .bbs_list td.pl10 {padding-left:10px}
+.qbot-embed .bbs_list td.c {text-align:center; padding:0px}
+.qbot-embed .bbs_list td.r {text-align:right}
+.qbot-embed .bbs_list td.g a {color:#666;text-decoration:none}
+.qbot-embed .bbs_list td.g a:hover, .qbot-embed a:active, .qbot-embed a:focus {text-decoration:underline}
+.qbot-embed .bbs_list tr.line5 td {border-top:1px solid #d5d6d9}
+.qbot-embed .bbs_list tr:first-child td {border-top:1px solid #d5d6d9}
+.qbot-embed .bbs_list tr:hover td {background-color:#f7f7f7}
+.qbot-embed .bbs_list img {margin-top:-2px;vertical-align:middle}
+.qbot-embed .bbs_list em {color:#f60;font-size:11px}
+.qbot-embed .bbs_list .point {color:#f60}
+.qbot-embed .bbs_list .re {padding:0 0 0 36px;background:url('../images/ico_re.gif') no-repeat 5px 2px}
+.qbot-embed .bbs_list td a.item {text-align:left; font-size:11px}
+
+.qbot-embed .srch_list {text-align:center; margin-bottom:20px}
+.qbot-embed .srch_list .input_tx {width:75px;height:15px;margin:0 1px 2px 4px;padding:3px 0 0 3px;border:1px solid #c9c9c9;color:#999;font-size:11px;vertical-align:middle}
+.qbot-embed .srch_list .select_tx {height:20px;margin:0 1px 2px 0px;border:1px solid #c9c9c9;color:#999;font-size:12px;vertical-align:middle}
+.qbot-embed .srch_list .select_tx option {padding-top:3px}
+.qbot-embed .srch_list img {margin-bottom:2px;vertical-align:middle;}
+.qbot-embed .srch_list .txgi {margin-top:10px; color:#777}
+
+.qbot-embed .bbs_view .head_area {position:relative;height:25px;padding:10px 110px 0 11px;border:solid #d5d6d9;border-width:1px 0;background:#f9f9f9;color:#555}
+.qbot-embed .bbs_view .head_area strong {font-size:15px}
+.qbot-embed .bbs_view .head_area .date {position:absolute;right:8px;top:13px; color:#666}
+.qbot-embed .bbs_view .tx_area {padding:15px 10px 10px 12px; height:410px;border-bottom:1px solid #d5d6d9;background:#fff;overflow:auto; color:#555}
+.qbot-embed .bbs_view .tx_area .mark {height:24px;text-align:right}
+.qbot-embed .bbs_view .tx_area .mark .bar {color:#999}
+.qbot-embed .bbs_view .tx_area p {padding:10px 0 55px;line-height:24px}
+
+.qbot-embed /* 시황 읽기*/
+.bbs_view .tx_area2 {padding:15px 10px 10px 12px; height:230px;border-bottom:1px solid #d5d6d9;background:#fff;overflow:auto; color:#555}
+.qbot-embed .bbs_view .tx_area2 .mark {height:24px;text-align:right}
+.qbot-embed .bbs_view .tx_area2 .mark .bar {color:#999}
+.qbot-embed .bbs_view .tx_area2 p {padding:10px 0 55px;line-height:24px}
+
+.qbot-embed .condi_area {height:150px;padding:10px 20px;border:1px solid #d5d5d5;overflow:hidden; margin-bottom:10px}
+.qbot-embed .condi_area .condi_box01 {float:left;width:430px}
+.qbot-embed .condi_area .charts {float:left;width:230px;margin-left:10px;padding-top:5px}
+.qbot-embed .condi_area .desc {float:left;width:180px}
+.qbot-embed .condi_area .desc li {padding:7px 0 3px 0; line-height:21px}
+.qbot-embed .condi_area .desc li.dat {background-position:0 4px;border-bottom: 1px solid #ccc;font-size:18px;text-align:center}
+.qbot-embed .condi_area .desc li.dat2 {background-position:0 4px;font-size:16px;text-align:center}
+.qbot-embed .condi_area .desc li .up {background-position:0 4px; font-size:16px}
+.qbot-embed .condi_area .desc li .tx {font-size:12px; text-align:center; color:#555}
+
+.qbot-embed .condi_area .anal {position:relative;float:right;width:250px}
+.qbot-embed .condi_area .anal strong {display:block; height:18px; padding-top:7px;padding-left:2px;color:#222}
+.qbot-embed .condi_area .anal .rank {display:block;padding:11px 0 0 4px}
+.qbot-embed .condi_area .anal .rank img {vertical-align:top;margin:-4px 0 0 9px}
+.qbot-embed .condi_area .anal .ly {float:left;position:absolute;left:0;top:68px;z-index:2;min-width:433px;max-width:600px;margin-left:-290px;padding:4px 5px 2px;border:1px solid #c5c5c5;background:#fff;line-height:14px}
+.qbot-embed .condi_area .anal ul {padding-top:12px}
+.qbot-embed .condi_area .anal li {position:relative;height:22px;padding-left:60px;text-align:right;white-space:nowrap}
+.qbot-embed .condi_area .anal li em {position:absolute;left:0;padding-left:7px;text-align:left;background:url('../images/bul_01.gif') no-repeat 0 4px}
+
+.qbot-embed .condi_area .tab { float:left; display:inline-block;height:27px; width:430px; border-bottom:1px solid #888; margin-bottom:10px}
+.qbot-embed .condi_area .tab li {float:left;width:102px}
+.qbot-embed .condi_area .tab li a {display:block;width:101px;height:18px;padding-top:8px;border:solid #dcdcdc;border-width:1px 1px 0 0;background:#f2f2f2;color:#666;font-size:12px;text-align:center;text-decoration:none}
+.qbot-embed .condi_area .tab li.frst a {width:100px;border-width:1px 1px 0}
+.qbot-embed .condi_area .tab li a.on {position:relative;margin-bottom:-1px;margin-left:-1px;padding-bottom:1px;border:solid #888;border-width:1px 1px 0;background:#fff;color:#333;font-weight:bold;letter-spacing:-1px}
+.qbot-embed .condi_area .tab li.frst a.on {margin-left:0}
+
+.qbot-embed .tbl_default table {width:100%;margin-bottom:25px}
+.qbot-embed .tbl_default thead th {min-height:14px;padding:7px 0 4px;border:1px solid #cacaca;background:#eaeaea;font-weight:normal;font-size:12px;line-height:14px}
+.qbot-embed .tbl_default thead .sub th {min-height:14px;padding:3px 0 0}
+.qbot-embed .tbl_default tbody th {padding:3px 0 0 7px;border:1px solid #dadada;background:#f9f9f9;font-weight:normal;text-align:left;white-space:nowrap}
+.qbot-embed .tbl_default td {min-height:15px;width:83px;padding:7px 6px 4px;border:1px solid #dadada;text-align:right}
+.qbot-embed .tbl_default tr.sum th, .qbot-embed .section_corpanal .tbl_default tr.sum td {background-color:#f0f0e6}
+.qbot-embed .tbl_default td.last {background-color:#f9f9f9}
+.qbot-embed .tbl_default .general td {width:67px;text-align:center}
+.qbot-embed .tbl_default .flow td {width:72px}
+.qbot-embed .tbl_default .hasdoc td {width:67px}
+.qbot-embed .tbl_default .hasdoc td.doc {width:79px;text-align:center;padding:0}
+.qbot-embed .tbl_default .hasdoc td.doc a {display:block;overflow:hidden;width:10px;height:12px;margin:0 auto;background:url('../images/ico_doc.gif') no-repeat;font-size:1px;text-indent:-1000px}
+.qbot-embed .tbl_default .nolast td {width:66px}
+
+.qbot-embed /* 윗글 아랫글 */
+.article_related {overflow:hidden;height:56px;margin:12px 0;border:solid #dadada;border-width:1px 0;background:url('../images/line_area_2.gif') repeat-x 0 28px} 
+.qbot-embed .article_related dt {float:left;width:78px;height:20px;padding:8px 0 0 12px;color:#666;font-weight:bold}
+.qbot-embed .article_related dd {float:left;width:660px;height:20px;padding:8px 0 0}
+.qbot-embed .article_related dd:hover { text-decoration: underline}
+.qbot-embed .article_related dt .prv {padding-right:9px;background:url('../images/bu_article_up.gif') no-repeat 100% 5px}
+.qbot-embed .article_related dt .nxt {padding-right:9px;background:url('../images/bu_article_dn.gif') no-repeat 100% 5px}
+
+.qbot-embed .paginate {color:#999;font-size:13px;font-family:굴림;text-align:center}
+.qbot-embed .paginate span {display:inline-block;padding:0 8px;vertical-align:top}
+.qbot-embed .paginate a {color:#666}
+.qbot-embed .paginate strong {color:#f60}
+.qbot-embed .paginate img {vertical-align:top}
+
+.qbot-embed /*팝업*/
+
+#popTop {height:35px;background:#354053}
+.qbot-embed #popTop h1 {padding:11px 0 0 12px;color:#fff;font-size:16px;font-weight:bold}
+.qbot-embed #popCont {min-width:320px;padding:25px 10px}
+.qbot-embed #popCont .terms_select {padding:0 0 9px;color:#9c9c9c}
+.qbot-embed #popCont .terms_select strong {color:#333}
+.qbot-embed #popCont .terms_select a {color:#999;text-decoration:none}
+.qbot-embed #popCont .form_cod {margin-bottom:15px;padding:20px 5px 24px 10px;background:#f3f3f4;color:#666;font-weight:bold}
+.qbot-embed #popCont .form_cod .forms_certi {display:block}
+.qbot-embed #popCont .form_cod .forms_certi label {float:left;margin:5px 16px 0 10px}
+.qbot-embed #popCont .form_cod .forms_certi .t_certi {float:left;width:126px;margin-right:15px}
+.qbot-embed #popCont .form_cod .forms_certi img {float:left}
+.qbot-embed #popCont .form_cod .forms_certi .tx_status {float:left;margin:11px 0 0 14px}
+.qbot-embed #popCont .btn_area {text-align:center; margin-top:15px}
+
+.qbot-embed .group_grid .tx { padding:20px 0;text-align:center; color:#666}
+
+.qbot-embed .group_grid table.table_grid {width:100%;border-style:solid;border-color:#c2c7d5;border-width:1px 0 1px}
+.qbot-embed .group_grid table.table_grid th {height:25px;padding-top:3px;border-bottom:1px solid #c2c7d5;background:#eaedf3;color:#54627f;font-weight:bold;text-align:center;text-align:center}
+.qbot-embed .group_grid table.table_grid td {height:23px;padding-top:3px; text-align:center}
+.qbot-embed .group_grid table.table_grid:not('.board') tr:nth-child(even) td {background:#f6f6f6}
+.qbot-embed .group_grid table.table_grid tr.even td {background:#f3f3f4}
+
+.qbot-embed #popcon {WIDTH:800px;}
+.qbot-embed #popwrapper {MIN-HEIGHT: 100%; WIDTH: 800px;POSITION: relative; padding:10px}
+/* ===== 임베드 정규화: 래퍼는 전체화면 html/body 동작을 따르지 않음 ===== */
+.qbot-embed { height: auto !important; min-height: 0 !important; overflow: visible !important; background: transparent !important; }
