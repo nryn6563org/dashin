@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="퀀트" />
+<meta name="author" content="" />
+<title>퀀트</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+var tab2Imgs = [
+  ['images/t_tap2_01.gif','images/t_tap2_01_on.gif'],
+  ['images/t_tap2_02.gif','images/t_tap2_02_on.gif'],
+  ['images/t_tap2_03.gif','images/t_tap2_03_on.gif'],
+  ['images/t_tap2_04.gif','images/t_tap2_04_on.gif']
+];
+function switchTab2(e, tabId, el) {
+  e.preventDefault();
+  var panels = document.querySelectorAll('.tab2-panel');
+  for (var i = 0; i < panels.length; i++) panels[i].style.display = 'none';
+  document.getElementById(tabId).style.display = 'block';
+  var btns = document.querySelectorAll('.tab2-btn');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].className = 'tab2-btn';
+    btns[i].querySelector('img').src = tab2Imgs[i][0];
+  }
+  el.className = 'tab2-btn on';
+  el.querySelector('img').src = tab2Imgs[Array.prototype.indexOf.call(btns, el)][1];
+}
+</script>
+</head>
+<body>
+  <div id="wrapper">
+    <!-- header -->
+    <div id="header">
+      <div class="top_menu">
+        <ul>
+          <li class="first">
+            <a href="list01.html"><img src="images/top_menu_tit01.gif" alt="퀀트" /></a>
+          </li>
+          <li>
+            <a href="list02.html"><img src="images/top_menu_tit02.gif" alt="나의 전략" /></a>
+          </li>
+          <li>
+            <a href="list03.html"><img src="images/top_menu_tit03.gif" alt="나의 전략 종목 분석" /></a>
+          </li>
+          <li>
+            <a href="list04.html"><img src="images/top_menu_tit04_on.gif" alt="퀀트 종합 브리핑" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- //header -->
+    <!-- contents -->
+    <div id="contents">
+      <div id="full_con">
+        <!-- top -->
+        <div class="full_top">
+          <h3 class="titleS">퀀트 포트폴리오 브리핑</h3>
+          <p>퀀트 포트폴리오 중 상승 모멘텀이 강한 종목과 전략을 소개하여, 시장의 흐름을 빠르게 파악하고, 전략의 선택과 변경에 도움을 드리고자 합니다.</p>
+        </div>
+        <!-- //top -->
+        <!-- 브리핑 탭 영역 (TabA~D 인라인) -->
+        <div class="full_area">
+          <h3 class="titleS">06월 08일 (10시 25분)</h3>
+          <!-- tabArea -->
+          <div class="tabArea3">
+            <ul>
+              <li class="first"><a href="#" class="tab2-btn on" onclick="switchTab2(event,'tab2A',this)"><img src="images/t_tap2_01_on.gif" alt="당일 상승률 상위 종목" /></a></li>
+              <li><a href="#" class="tab2-btn" onclick="switchTab2(event,'tab2B',this)"><img src="images/t_tap2_02.gif" alt="누적수익률 상위 종목" /></a></li>
+              <li><a href="#" class="tab2-btn" onclick="switchTab2(event,'tab2C',this)"><img src="images/t_tap2_03.gif" alt="전일 수익률 상위 종목" /></a></li>
+              <li><a href="#" class="tab2-btn" onclick="switchTab2(event,'tab2D',this)"><img src="images/t_tap2_04.gif" alt="5일 수익률 상위 전략" /></a></li>
+            </ul>
+          </div>
+          <!-- //tabArea -->
+
+          <!-- Tab A: 당일 상승률 상위 종목 -->
+          <div id="tab2A" class="tab2-panel">
+            <table class="baseTb tOver mt10">
+              <colgroup>
+                <col width="8%" />
+                <col width="*" />
+                <col width="13%" />
+                <col width="13%" />
+                <col width="13%" />
+                <col width="13%" />
+                <col width="13%" />
+                <col width="13%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th><img src="images/t_sy_01.gif" alt="순위" /></th>
+                  <th><img src="images/t_port_now01.gif" alt="종목명" /></th>
+                  <th><img src="images/t_port_now04.gif" alt="현재가" /></th>
+                  <th><img src="images/t_bp_05.gif" alt="당일상승률" /></th>
+                  <th><img src="images/t_02_03.gif" alt="최초 매수일" /></th>
+                  <th><img src="images/t_port_now03.gif" alt="매수단가" /></th>
+                  <th><img src="images/t_sy_05.gif" alt="총수익률" /></th>
+                  <th><img src="images/t_rich_title.gif" alt="퀀트 전략 명" /></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="point red"><strong>1</strong></td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/19</td>
+                  <td>1,891</td>
+                  <td class="red">38.82%</td>
+                  <td>금돈중기</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>2</strong></td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/27</td>
+                  <td>1,876</td>
+                  <td class="red">39.93%</td>
+                  <td>광산단기</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>3</strong></td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/13</td>
+                  <td>1,706</td>
+                  <td class="red">53.87%</td>
+                  <td>장수단기</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>4</strong></td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/12</td>
+                  <td>1,640</td>
+                  <td class="red">60.06%</td>
+                  <td>생명단기</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>5</strong></td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/14</td>
+                  <td>1,877</td>
+                  <td class="red">39.85%</td>
+                  <td>불꽃단기</td>
+                </tr>
+                <tr>
+                  <td class="point">6</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/08</td>
+                  <td>1,641</td>
+                  <td class="red">59.96%</td>
+                  <td>수정단기</td>
+                </tr>
+                <tr>
+                  <td class="point">7</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/13</td>
+                  <td>1,706</td>
+                  <td class="red">53.87%</td>
+                  <td>태양단기</td>
+                </tr>
+                <tr>
+                  <td class="point">8</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/27</td>
+                  <td>1,876</td>
+                  <td class="red">39.93%</td>
+                  <td>황소단기</td>
+                </tr>
+                <tr>
+                  <td class="point">9</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/14</td>
+                  <td>1,877</td>
+                  <td class="red">39.85%</td>
+                  <td>용꿈단기</td>
+                </tr>
+                <tr>
+                  <td class="point">10</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/07</td>
+                  <td>1,609</td>
+                  <td class="red">63.14%</td>
+                  <td>대박단기</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //Tab A -->
+
+          <!-- Tab B: 누적수익률 상위 종목 -->
+          <div id="tab2B" class="tab2-panel" style="display:none">
+            <table class="baseTb tOver mt10">
+              <colgroup>
+                <col width="8%" />
+                <col width="*" />
+                <col width="13%" />
+                <col width="13%" />
+                <col width="13%" />
+                <col width="13%" />
+                <col width="13%" />
+                <col width="13%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th><img src="images/t_sy_01.gif" alt="순위" /></th>
+                  <th><img src="images/t_port_now01.gif" alt="종목명" /></th>
+                  <th><img src="images/t_port_now04.gif" alt="현재가" /></th>
+                  <th><img src="images/t_bp_05.gif" alt="당일상승률" /></th>
+                  <th><img src="images/t_02_03.gif" alt="최초 매수일" /></th>
+                  <th><img src="images/t_port_now03.gif" alt="매수단가" /></th>
+                  <th><img src="images/t_sy_05.gif" alt="총수익률" /></th>
+                  <th><img src="images/t_rich_title.gif" alt="퀀트 전략 명" /></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="point red"><strong>1</strong></td>
+                  <td class="point"><strong>효성티앤씨</strong></td>
+                  <td>308,500</td>
+                  <td class="blueW">-9.40%</td>
+                  <td>03/19</td>
+                  <td>86,400</td>
+                  <td class="red">257.06%</td>
+                  <td>벼락중기</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>2</strong></td>
+                  <td class="point"><strong>동양생명</strong></td>
+                  <td>7,120</td>
+                  <td class="blueW">-8.25%</td>
+                  <td>04/01</td>
+                  <td>2,345</td>
+                  <td class="red">203.62%</td>
+                  <td>대박장기</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>3</strong></td>
+                  <td class="point"><strong>다우데이타</strong></td>
+                  <td>18,150</td>
+                  <td class="blueW">-6.10%</td>
+                  <td>06/29</td>
+                  <td>10,500</td>
+                  <td class="red">72.86%</td>
+                  <td>벼락중기</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>4</strong></td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/07</td>
+                  <td>1,609</td>
+                  <td class="red">63.14%</td>
+                  <td>대박단기</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>5</strong></td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/07</td>
+                  <td>1,609</td>
+                  <td class="red">63.14%</td>
+                  <td>리치단기</td>
+                </tr>
+                <tr>
+                  <td class="point">6</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/12</td>
+                  <td>1,640</td>
+                  <td class="red">60.06%</td>
+                  <td>생명단기</td>
+                </tr>
+                <tr>
+                  <td class="point">7</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/08</td>
+                  <td>1,641</td>
+                  <td class="red">59.96%</td>
+                  <td>수정단기</td>
+                </tr>
+                <tr>
+                  <td class="point">8</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/13</td>
+                  <td>1,706</td>
+                  <td class="red">53.87%</td>
+                  <td>장수단기</td>
+                </tr>
+                <tr>
+                  <td class="point">9</td>
+                  <td class="point"><strong>화신정공</strong></td>
+                  <td>2,625</td>
+                  <td class="red">29.95%</td>
+                  <td>05/13</td>
+                  <td>1,706</td>
+                  <td class="red">53.87%</td>
+                  <td>태양단기</td>
+                </tr>
+                <tr>
+                  <td class="point">10</td>
+                  <td class="point"><strong>SK네트웍스</strong></td>
+                  <td>12,690</td>
+                  <td class="red">16.42%</td>
+                  <td>05/19</td>
+                  <td>8,260</td>
+                  <td class="red">53.63%</td>
+                  <td>황소장기</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //Tab B -->
+
+          <!-- Tab C: 전일 수익률 상위 종목 -->
+          <div id="tab2C" class="tab2-panel" style="display:none">
+            <table class="baseTb tOver mt10">
+              <colgroup>
+                <col width="8%" />
+                <col width="*" />
+                <col width="12%" />
+                <col width="12%" />
+                <col width="27%" />
+                <col width="27%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th><img src="images/t_sy_01.gif" alt="순위" /></th>
+                  <th><img src="images/t_rich_title.gif" alt="퀀트 전략 명" /></th>
+                  <th><img src="images/t_bp_03.gif" alt="전일 상승률" /></th>
+                  <th><img src="images/t_sy_05.gif" alt="총수익률" /></th>
+                  <th><img src="images/t_bp_02.gif" alt="최근 매수 종목" /></th>
+                  <th><img src="images/t_bp_01.gif" alt="최근 매도 종목" /></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="point red"><strong>1</strong></td>
+                  <td class="point"><a href="#"><strong>리치단기</strong></a></td>
+                  <td class="red">0.09%</td>
+                  <td class="red">53.95%</td>
+                  <td class="al pl10">슈피겐코리아(05/15),  빅솔론(05/13)</td>
+                  <td class="al pl10">패션플랫폼(05/21),  HD현대(05/19)</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>2</strong></td>
+                  <td class="point"><a href="#"><strong>성장중기</strong></a></td>
+                  <td class="blueW">-0.04%</td>
+                  <td class="red">113.09%</td>
+                  <td class="al pl10">한국큐빅(05/07),  에스폴리텍(04/29)</td>
+                  <td class="al pl10">엔피케이(06/08),  비비씨(06/01)</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>3</strong></td>
+                  <td class="point"><a href="#"><strong>수정단기</strong></a></td>
+                  <td class="blueW">-0.19%</td>
+                  <td class="red">187.45%</td>
+                  <td class="al pl10">삼현철강(05/28),  대정화금(05/26)</td>
+                  <td class="al pl10">삼현철강(06/08),  HD현대(05/19)</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>4</strong></td>
+                  <td class="point"><a href="#"><strong>용꿈단기</strong></a></td>
+                  <td class="blueW">-0.20%</td>
+                  <td class="red">167.37%</td>
+                  <td class="al pl10">삼현철강(05/28),  대정화금(05/26)</td>
+                  <td class="al pl10">삼현철강(06/08),  제이엠티(05/21)</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>5</strong></td>
+                  <td class="point"><a href="#"><strong>대박단기</strong></a></td>
+                  <td class="blueW">-0.42%</td>
+                  <td class="red">98.88%</td>
+                  <td class="al pl10">시디즈(05/29),  LB세미콘(05/28)</td>
+                  <td class="al pl10">시디즈(06/02),  LB세미콘(06/01)</td>
+                </tr>
+                <tr>
+                  <td class="point">6</td>
+                  <td class="point"><a href="#"><strong>태양단기</strong></a></td>
+                  <td class="blueW">-0.43%</td>
+                  <td class="red">70.17%</td>
+                  <td class="al pl10">시디즈(05/29),  LB세미콘(05/28)</td>
+                  <td class="al pl10">시디즈(06/02),  LB세미콘(06/01)</td>
+                </tr>
+                <tr>
+                  <td class="point">7</td>
+                  <td class="point"><a href="#"><strong>금돈중기</strong></a></td>
+                  <td class="blueW">-0.48%</td>
+                  <td class="red">159.21%</td>
+                  <td class="al pl10">퓨릿(06/08),  대신정보통신(06/08)</td>
+                  <td class="al pl10">에스앤디(06/08),  대성에너지(06/08)</td>
+                </tr>
+                <tr>
+                  <td class="point">8</td>
+                  <td class="point"><a href="#"><strong>리치장기</strong></a></td>
+                  <td class="blueW">-0.52%</td>
+                  <td class="red">254.68%</td>
+                  <td class="al pl10">이글벳(06/08),  에스앤디(06/05)</td>
+                  <td class="al pl10">SJM홀딩스(06/08),  대성에너지(06/05)</td>
+                </tr>
+                <tr>
+                  <td class="point">9</td>
+                  <td class="point"><a href="#"><strong>생명단기</strong></a></td>
+                  <td class="blueW">-0.70%</td>
+                  <td class="red">252.59%</td>
+                  <td class="al pl10">시디즈(05/29),  LB세미콘(05/28)</td>
+                  <td class="al pl10">삼현철강(06/08),  시디즈(06/02)</td>
+                </tr>
+                <tr>
+                  <td class="point">10</td>
+                  <td class="point"><a href="#"><strong>안정중기</strong></a></td>
+                  <td class="blueW">-0.91%</td>
+                  <td class="red">260.32%</td>
+                  <td class="al pl10">에스티오(06/05),  삼진(06/05)</td>
+                  <td class="al pl10">진바이오텍(06/08),  세진티에스(06/04)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //Tab C -->
+
+          <!-- Tab D: 5일 수익률 상위 전략 -->
+          <div id="tab2D" class="tab2-panel" style="display:none">
+            <table class="baseTb tOver mt10">
+              <colgroup>
+                <col width="8%" />
+                <col width="*" />
+                <col width="12%" />
+                <col width="12%" />
+                <col width="27%" />
+                <col width="27%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th><img src="images/t_sy_01.gif" alt="순위" /></th>
+                  <th><img src="images/t_rich_title.gif" alt="퀀트 전략 명" /></th>
+                  <th><img src="images/t_bp_04.gif" alt="5일 상승률" /></th>
+                  <th><img src="images/t_sy_05.gif" alt="총수익률" /></th>
+                  <th><img src="images/t_bp_02.gif" alt="최근 매수 종목" /></th>
+                  <th><img src="images/t_bp_01.gif" alt="최근 매도 종목" /></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="point red"><strong>1</strong></td>
+                  <td class="point"><a href="#"><strong>리치단기</strong></a></td>
+                  <td class="blueW">-1.04%</td>
+                  <td class="red">53.95%</td>
+                  <td class="al pl10">슈피겐코리아(05/15),  빅솔론(05/13)</td>
+                  <td class="al pl10">패션플랫폼(05/21),  HD현대(05/19)</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>2</strong></td>
+                  <td class="point"><a href="#"><strong>용꿈단기</strong></a></td>
+                  <td class="blueW">-1.37%</td>
+                  <td class="red">167.37%</td>
+                  <td class="al pl10">삼현철강(05/28),  대정화금(05/26)</td>
+                  <td class="al pl10">삼현철강(06/08),  제이엠티(05/21)</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>3</strong></td>
+                  <td class="point"><a href="#"><strong>수정단기</strong></a></td>
+                  <td class="blueW">-1.51%</td>
+                  <td class="red">187.45%</td>
+                  <td class="al pl10">삼현철강(05/28),  대정화금(05/26)</td>
+                  <td class="al pl10">삼현철강(06/08),  HD현대(05/19)</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>4</strong></td>
+                  <td class="point"><a href="#"><strong>성장중기</strong></a></td>
+                  <td class="blueW">-1.53%</td>
+                  <td class="red">113.09%</td>
+                  <td class="al pl10">한국큐빅(05/07),  에스폴리텍(04/29)</td>
+                  <td class="al pl10">엔피케이(06/08),  비비씨(06/01)</td>
+                </tr>
+                <tr>
+                  <td class="point red"><strong>5</strong></td>
+                  <td class="point"><a href="#"><strong>벼락중기</strong></a></td>
+                  <td class="blueW">-1.58%</td>
+                  <td class="red">55.15%</td>
+                  <td class="al pl10">NICE(06/08),  휴온스글로벌(06/05)</td>
+                  <td class="al pl10">SNT홀딩스(06/08),  KG케미칼(06/08)</td>
+                </tr>
+                <tr>
+                  <td class="point">6</td>
+                  <td class="point"><a href="#"><strong>태양단기</strong></a></td>
+                  <td class="blueW">-2.19%</td>
+                  <td class="red">70.17%</td>
+                  <td class="al pl10">시디즈(05/29),  LB세미콘(05/28)</td>
+                  <td class="al pl10">시디즈(06/02),  LB세미콘(06/01)</td>
+                </tr>
+                <tr>
+                  <td class="point">7</td>
+                  <td class="point"><a href="#"><strong>대지중기</strong></a></td>
+                  <td class="blueW">-2.19%</td>
+                  <td class="red">92.37%</td>
+                  <td class="al pl10">미스토홀딩스(06/04),  이마트(05/19)</td>
+                  <td class="al pl10">HD한국조선해양(06/08),  현대건설(06/02)</td>
+                </tr>
+                <tr>
+                  <td class="point">8</td>
+                  <td class="point"><a href="#"><strong>대박단기</strong></a></td>
+                  <td class="blueW">-2.27%</td>
+                  <td class="red">98.88%</td>
+                  <td class="al pl10">시디즈(05/29),  LB세미콘(05/28)</td>
+                  <td class="al pl10">시디즈(06/02),  LB세미콘(06/01)</td>
+                </tr>
+                <tr>
+                  <td class="point">9</td>
+                  <td class="point"><a href="#"><strong>생명단기</strong></a></td>
+                  <td class="blueW">-2.55%</td>
+                  <td class="red">252.59%</td>
+                  <td class="al pl10">시디즈(05/29),  LB세미콘(05/28)</td>
+                  <td class="al pl10">삼현철강(06/08),  시디즈(06/02)</td>
+                </tr>
+                <tr>
+                  <td class="point">10</td>
+                  <td class="point"><a href="#"><strong>안정중기</strong></a></td>
+                  <td class="blueW">-2.79%</td>
+                  <td class="red">260.32%</td>
+                  <td class="al pl10">에스티오(06/05),  삼진(06/05)</td>
+                  <td class="al pl10">진바이오텍(06/08),  세진티에스(06/04)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //Tab D -->
+        </div>
+        <!-- //브리핑 탭 영역 -->
+      </div>
+    </div>
+    <!-- //contents -->
+
+    <!-- 전략 변경 팝업 -->
+    <div id="apDiv0" style="display:none">
+      <div class="appop">
+        <span class="btn_close2 ar"><a href="#" onclick="document.getElementById('apDiv0').style.display='none'; return false;"><img src="images/btn_close.gif" border="0" class="ar" /></a></span>
+      </div>
+      <div class="pop04">
+        <h3 class="titleR"><img src="images/ts_investment_tendency2.gif" alt="#" /></h3>
+        <!-- table -->
+        <table class="baseTb tOver mt5">
+          <colgroup>
+            <col width="5%" />
+            <col width="5%" />
+            <col width="15%" />
+            <col width="8%" />
+            <col width="8%" />
+            <col width="8%" />
+            <col width="12%" />
+            <col width="*" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>등록</th>
+              <th>순위</th>
+              <th>전략명</th>
+              <th>수익률<br />(1M)</th>
+              <th>수익률<br />(3M)</th>
+              <th>수익률<br />(누적)</th>
+              <th>유형</th>
+              <th>특징</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_1" value="00000805" class="radio" /></td>
+              <td class="num">1</td>
+              <td class="point"><strong>안정중기</strong></td>
+              <td class="quant_down">-16.52%</td>
+              <td class="quant_down">-9.50%</td>
+              <td class="quant_up">260.32%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 안정성 높은 업종 중 AI학습을 통해 투자매력도가 높은 종목 선정</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_2" value="00000762" class="radio" /></td>
+              <td class="num">2</td>
+              <td class="point"><strong>황소단기</strong></td>
+              <td class="quant_down">-2.99%</td>
+              <td class="quant_up">15.38%</td>
+              <td class="quant_up">258.64%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 실적변화가 보이는 종목들 중 성장성이 있는 종목을 구성한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_3" value="00000755" class="radio" /></td>
+              <td class="num">3</td>
+              <td class="point"><strong>리치장기</strong></td>
+              <td class="quant_down">-7.68%</td>
+              <td class="quant_down">-3.39%</td>
+              <td class="quant_up">254.68%</td>
+              <td>리스크관리형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_02.gif" width="31" height="14" alt="중기" /> 실적이 양호한 종목들 중 밸류에이션을 고려한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_4" value="00000766" class="radio" /></td>
+              <td class="num">4</td>
+              <td class="point"><strong>생명단기</strong></td>
+              <td class="quant_down">-4.27%</td>
+              <td class="quant_up">11.76%</td>
+              <td class="quant_up">252.59%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 성장성과 밸류에이션을 모두 고려한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_5" value="00000768" class="radio" /></td>
+              <td class="num">5</td>
+              <td class="point"><strong>광산단기</strong></td>
+              <td class="quant_down">-5.93%</td>
+              <td class="quant_up">10.69%</td>
+              <td class="quant_up">238.87%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 실적변화가 보이는 종목들 중 밸류에이션과 성장성을 고려한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_6" value="00000764" class="radio" /></td>
+              <td class="num">6</td>
+              <td class="point"><strong>수정단기</strong></td>
+              <td class="quant_down">-1.38%</td>
+              <td class="quant_up">15.28%</td>
+              <td class="quant_up">187.45%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 저평가 요소가 있는 종목들 중 여러 측면에서 실적변화가 있는 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_7" value="00000756" class="radio" /></td>
+              <td class="num">7</td>
+              <td class="point"><strong>대박장기</strong></td>
+              <td class="quant_up">1.40%</td>
+              <td class="quant_up">27.50%</td>
+              <td class="quant_up">167.60%</td>
+              <td>리스크관리형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_02.gif" width="31" height="14" alt="중기" /> 실적이 양호하면서 성장성 있는 종목을 구성한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_8" value="00000761" class="radio" /></td>
+              <td class="num">8</td>
+              <td class="point"><strong>용꿈단기</strong></td>
+              <td class="quant_down">-4.36%</td>
+              <td class="quant_up">10.66%</td>
+              <td class="quant_up">167.37%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 실적변화가 보이는 종목들 중 저평가 요소를 고려한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_9" value="00000802" class="radio" /></td>
+              <td class="num">9</td>
+              <td class="point"><strong>금돈중기</strong></td>
+              <td class="quant_down">-8.53%</td>
+              <td class="quant_up">0.39%</td>
+              <td class="quant_up">159.21%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 소형주 중 실적 모멘텀과 PER, PBR, ROA 등 투자지표가 저평가된 종목 발굴</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_10" value="00000758" class="radio" /></td>
+              <td class="num">10</td>
+              <td class="point"><strong>황소장기</strong></td>
+              <td class="quant_down">-6.15%</td>
+              <td class="quant_up">3.77%</td>
+              <td class="quant_up">148.90%</td>
+              <td>리스크관리형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_02.gif" width="31" height="14" alt="중기" /> 실적변화가 보이는 종목들 중 성장성이 있는 종목을 구성한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_11" value="00000757" class="radio" /></td>
+              <td class="num">11</td>
+              <td class="point"><strong>용꿈장기</strong></td>
+              <td class="quant_down">-14.15%</td>
+              <td class="quant_down">-8.95%</td>
+              <td class="quant_up">141.49%</td>
+              <td>리스크관리형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_02.gif" width="31" height="14" alt="중기" /> 실적변화가 보이는 종목들 중 저평가 요소를 고려한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_12" value="00000803" class="radio" checked="checked" /></td>
+              <td class="num">12</td>
+              <td class="point"><strong>철벽장기</strong></td>
+              <td class="quant_down">-8.33%</td>
+              <td class="quant_up">18.34%</td>
+              <td class="quant_up">124.76%</td>
+              <td>리스크관리형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_01.gif" width="31" height="14" alt="장기" /> 시총 4000억원 이상인 종목들 중 장기, 중기, 단기 PER를 분석해 밸류에이션 매력이 높은 종목 선정</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_13" value="00000806" class="radio" /></td>
+              <td class="num">13</td>
+              <td class="point"><strong>성장중기</strong></td>
+              <td class="quant_down">-6.00%</td>
+              <td class="quant_down">-2.06%</td>
+              <td class="quant_up">113.09%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 성장성 높은 업종 중 AI학습을 통해 투자매력도가 높은 종목 선정</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_14" value="00000767" class="radio" /></td>
+              <td class="num">14</td>
+              <td class="point"><strong>장수단기</strong></td>
+              <td class="quant_down">-14.56%</td>
+              <td class="quant_down">-4.31%</td>
+              <td class="quant_up">108.40%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 성장성이 있는 종목들 중 여러 측면에서 실적변화가 있는 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_15" value="00000760" class="radio" /></td>
+              <td class="num">15</td>
+              <td class="point"><strong>대박단기</strong></td>
+              <td class="quant_down">-0.93%</td>
+              <td class="quant_up">15.15%</td>
+              <td class="quant_up">98.88%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 실적이 양호하면서 성장성 있는 종목을 구성한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_16" value="00000769" class="radio" /></td>
+              <td class="num">16</td>
+              <td class="point"><strong>대지중기</strong></td>
+              <td class="quant_up">1.70%</td>
+              <td class="quant_up">14.00%</td>
+              <td class="quant_up">92.37%</td>
+              <td>추종형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_02.gif" width="31" height="14" alt="중기" /> 중대형주 중에서 밸류에이션과 성장성을 고려해 선택한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_17" value="00000765" class="radio" /></td>
+              <td class="num">17</td>
+              <td class="point"><strong>불꽃단기</strong></td>
+              <td class="quant_down">-12.16%</td>
+              <td class="quant_up">4.52%</td>
+              <td class="quant_up">83.23%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 밸류에이션과 성장성을 균형있게 구성한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_18" value="00000763" class="radio" /></td>
+              <td class="num">18</td>
+              <td class="point"><strong>태양단기</strong></td>
+              <td class="quant_down">-11.05%</td>
+              <td class="quant_up">6.20%</td>
+              <td class="quant_up">70.17%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 실적이 양호하면서 밸류에이션 및 성장성 관점을 모두 고려한 포트폴리오</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_19" value="00000804" class="radio" /></td>
+              <td class="num">19</td>
+              <td class="point"><strong>벼락중기</strong></td>
+              <td class="quant_down">-15.18%</td>
+              <td class="quant_down">-0.60%</td>
+              <td class="quant_up">55.15%</td>
+              <td>추종형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_02.gif" width="31" height="14" alt="중기" /> 이익수준에 비해 현재 가치가 현저히 낮게 측정된 유동성이 풍부한 중형주 선정 전략</td>
+            </tr>
+            <tr>
+              <td class="num"><input type="radio" name="rdoPms_code" id="rdoPms_code_20" value="00000759" class="radio" /></td>
+              <td class="num">20</td>
+              <td class="point"><strong>리치단기</strong></td>
+              <td class="quant_down">-6.72%</td>
+              <td class="quant_up">8.74%</td>
+              <td class="quant_up">53.95%</td>
+              <td>시장주도형</td>
+              <td style="text-align:left"><img class="vm pb2" src="images/icon_03.gif" width="31" height="14" alt="단기" /> 실적이 양호한 종목들 중 밸류에이션을 고려한 포트폴리오</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- //table -->
+      </div>
+    </div>
+    <!-- //전략 변경 팝업 -->
+  </div>
+</body>
+</html>
