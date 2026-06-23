@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* stock.css - 병합/정리/스코프 통합본
+   원본: common.css + bbs.css + layout.css (guide.css/popup.css 미사용 제외)
+   - 미사용 규칙 제거(적극) / EUC-KR -> UTF-8 / 모든 셀렉터를 .stock-wrap 하위로 스코프
+   - 적용: <div id="wrapper" class="stock-wrap"> */
+
+.stock-wrap, .stock-wrap * {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap {POSITION: relative; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: 돋움, Dotum, Arial, sans-serif; BACKGROUND: #fff; HEIGHT: 100%; COLOR: #898989; FONT-SIZE: 12px; PADDING-TOP: 0p}
+.stock-wrap IMG {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap FIELDSET {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap LEGEND {POSITION: absolute; LINE-HEIGHT: 0; WIDTH: 1px; DISPLAY: none; HEIGHT: 1px; FONT-SIZE: 0px; OVERFLOW: hidden; TOP: 0px; LEFT: -1000%}
+.stock-wrap CAPTION {POSITION: absolute; LINE-HEIGHT: 0; WIDTH: 1px; DISPLAY: none; HEIGHT: 1px; FONT-SIZE: 0px; OVERFLOW: hidden; TOP: 0px; LEFT: -1000%}
+.stock-wrap HR {POSITION: absolute; LINE-HEIGHT: 0; WIDTH: 1px; DISPLAY: none; HEIGHT: 1px; FONT-SIZE: 0px; OVERFLOW: hidden; TOP: 0px; LEFT: -1000%}
+.stock-wrap TEXTAREA {BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.3; PADDING-LEFT: 2px; PADDING-RIGHT: 0px; FONT-FAMILY: 돋움, Dotum, Arial, sans-serif; COLOR: #666; FONT-SIZE: 12px; BORDER-TOP: #d7d7d7 1px solid; BORDER-RIGHT: #d7d7d7 1px solid; PADDING-TOP: 2px}
+.stock-wrap P {FONT-FAMILY: 돋움, Dotum, Arial, sans-serif}
+.stock-wrap INPUT {FONT-FAMILY: 돋움, Dotum, Arial, sans-serif}
+.stock-wrap BUTTON {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 13px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: 돋움, Dotum, Arial, sans-serif; BACKGROUND: none transparent scroll repeat 0% 0%; FONT-SIZE: 11px; OVERFLOW: visible; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap UL {LIST-STYLE-TYPE: none}
+.stock-wrap OL {LIST-STYLE-TYPE: none}
+.stock-wrap DT {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap DD {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap H1 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap H2 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap H3 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap H4 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap H5 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap H6 {PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap ADDRESS {FONT-STYLE: normal}
+.stock-wrap EM {FONT-STYLE: normal}
+.stock-wrap TABLE {BORDER-COLLAPSE: collapse !important; FONT-FAMILY: 돋움, Dotum, Arial, sans-serif; FONT-SIZE: 12px}
+.stock-wrap A {COLOR: #898989; TEXT-DECORATION: none !important}
+.stock-wrap A:link {COLOR: #898989; TEXT-DECORATION: none}
+.stock-wrap A:visited {COLOR: #898989; TEXT-DECORATION: none}
+.stock-wrap A:hover {COLOR: #898989; TEXT-DECORATION: underline}
+.stock-wrap A:focus {COLOR: #898989; TEXT-DECORATION: underline}
+.stock-wrap A:active {COLOR: #898989; TEXT-DECORATION: none}
+.stock-wrap .pointer {CURSOR: pointer}
+.stock-wrap .after {WIDTH: auto}
+.stock-wrap .after:after {DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ""}
+.stock-wrap .al {TEXT-ALIGN: left !important}
+.stock-wrap .ac {TEXT-ALIGN: center !important}
+.stock-wrap .ar {TEXT-ALIGN: right !important}
+.stock-wrap .vm {VERTICAL-ALIGN: middle !important}
+.stock-wrap .vb {VERTICAL-ALIGN: bottom !important}
+.stock-wrap .absolute {POSITION: absolute}
+.stock-wrap .fixed {POSITION: fixed}
+.stock-wrap .normal {FONT-WEIGHT: normal !important}
+.stock-wrap .blueW {COLOR: #6881a2}
+.stock-wrap .red {COLOR: #ec4b2a}
+.stock-wrap .pt10 {PADDING-TOP: 10px !important}
+.stock-wrap .pt15 {PADDING-TOP: 15px !important}
+.stock-wrap .pt20 {PADDING-TOP: 20px !important}
+.stock-wrap .pb2 {PADDING-BOTTOM: 2px !important}
+.stock-wrap .pl10 {PADDING-LEFT: 10px !important}
+.stock-wrap .pl15 {PADDING-LEFT: 15px !important}
+.stock-wrap .pl20 {PADDING-LEFT: 20px !important}
+.stock-wrap .mt5 {MARGIN-TOP: 5px;_MARGIN-TOP: 0px !important}
+.stock-wrap .mt10 {MARGIN-TOP: 10px !important}
+.stock-wrap .mt15 {MARGIN-TOP: 15px !important}
+.stock-wrap .mb15 {MARGIN-BOTTOM: 15px !important}
+.stock-wrap INPUT {BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; HEIGHT: 16px; COLOR: #666; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #d7d7d7 1px solid; BORDER-RIGHT: #d7d7d7 1px solid; PADDING-TOP: 2px}
+.stock-wrap INPUT.radio {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 4px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap INPUT.checkbox {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; MARGIN-RIGHT: 4px; BORDER-RIGHT: 0px; PADDING-TOP: 0px}
+.stock-wrap INPUT.file {WIDTH: 400px; BACKGROUND: #fff; HEIGHT: 20px !important}
+.stock-wrap SELECT {BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 1.2; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; FONT-FAMILY: "돋움", Dotum, Arial, Sans-serif; HEIGHT: 20px; COLOR: #666; FONT-SIZE: 1em; VERTICAL-ALIGN: middle; BORDER-TOP: #d7d7d7 1px solid; BORDER-RIGHT: #d7d7d7 1px solid; PADDING-TOP: 1px}
+.stock-wrap .tabArea {POSITION: relative; WIDTH: auto}
+.stock-wrap .tabArea:after {DISPLAY: block; CLEAR: both; CONTENT: ""}
+.stock-wrap .tabArea UL {WIDTH: 100%; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot11/web/images/bg_tab.gif) repeat-x 0px 0px; FLOAT: left; HEIGHT: 33px; OVERFLOW: hidden}
+.stock-wrap .tabArea UL LI {FLOAT: left}
+.stock-wrap .tabArea UL LI.first A {BACKGROUND: none transparent scroll repeat 0% 0%}
+.stock-wrap .tabArea UL LI A {PADDING-BOTTOM: 8px; PADDING-LEFT: 21px; PADDING-RIGHT: 21px; DISPLAY: inline-block; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot11/web/images/bar_tab.gif) no-repeat 0px center; PADDING-TOP: 10px}
+.stock-wrap .tabArea UL LI A.on {BORDER-BOTTOM: 0px; BORDER-LEFT: #da2f5b 2px solid; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #fff; BORDER-TOP: #da2f5b 2px solid; BORDER-RIGHT: #da2f5b 2px solid}
+.stock-wrap #contents FIELDSET.t_search {TEXT-ALIGN: right; MARGIN-TOP: -10px; MARGIN-BOTTOM: 10px; HEIGHT: 20px}
+.stock-wrap TABLE {COLOR: #666}
+.stock-wrap .baseTb {WIDTH: 100%;}
+.stock-wrap .baseTb {*WIDTH: 98%;}
+.stock-wrap .baseTb TH {BORDER-BOTTOM: #3c3c3c 2px solid; PADDING-BOTTOM: 7px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #fbfafa; BORDER-TOP: #eae9e8 1px solid; PADDING-TOP: 10px}
+.stock-wrap .baseTb TD {BORDER-BOTTOM: #ecebea 1px solid; TEXT-ALIGN: center; PADDING-BOTTOM: 7px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px}
+.stock-wrap .baseTb TD.subject {TEXT-ALIGN: left; PADDING-LEFT: 20px; LETTER-SPACING: -1px}
+.stock-wrap .baseTb TD IMG {VERTICAL-ALIGN: middle}
+.stock-wrap .baseTb A {COLOR: #666; TEXT-DECORATION: none}
+.stock-wrap .baseTb .replyicon {MARGIN-RIGHT: 5px}
+.stock-wrap .baseTb .state SPAN {TEXT-ALIGN: center; PADDING-BOTTOM: 2px; MARGIN-TOP: -3px; PADDING-LEFT: 2px; WIDTH: 50px; PADDING-RIGHT: 2px; DISPLAY: inline-block; MARGIN-BOTTOM: -2px; LETTER-SPACING: -1px; FONT-SIZE: 11px; PADDING-TOP: 3px}
+.stock-wrap .baseTb .state .stand {BORDER-BOTTOM: #d1d1d1 1px solid; BORDER-LEFT: #d1d1d1 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BORDER-TOP: #d1d1d1 1px solid; BORDER-RIGHT: #d1d1d1 1px solid; PADDING-TOP: 2px}
+.stock-wrap .baseTb .state .take {BACKGROUND: #f7a629; COLOR: #fff}
+.stock-wrap .baseTb .state .end {BACKGROUND: #ca1704; COLOR: #fff}
+.stock-wrap .baseTb TR.this A {COLOR: #fff}
+.stock-wrap .baseTb TR.this TD {BACKGROUND: #a3a3a3; COLOR: #fff}
+.stock-wrap .baseTb TR.this TD.point {BACKGROUND: #5889cb}
+.stock-wrap .baseTb TR.this TD.num {BACKGROUND: #5889cb}
+.stock-wrap .baseTb TR.this .state .stand {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap .baseTb TR.this .state .take {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap .baseTb TR.this .state .end {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap .baseTb2 {WIDTH: 100%;}
+.stock-wrap .baseTb2 TH {BORDER-BOTTOM: #3c3c3c 2px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #fbfafa; BORDER-TOP: #eae9e8 1px solid; PADDING-TOP: 10px}
+.stock-wrap .baseTb2 TD {BORDER-BOTTOM: #ecebea 1px solid; TEXT-ALIGN: center; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px}
+.stock-wrap .baseTb2 TD.subject {TEXT-ALIGN: left; PADDING-LEFT: 20px; LETTER-SPACING: -1px}
+.stock-wrap .baseTb2 A {COLOR: #666; TEXT-DECORATION: none}
+.stock-wrap .baseTb2 .replyicon {MARGIN-RIGHT: 5px}
+.stock-wrap .baseTb2 .state SPAN {TEXT-ALIGN: center; PADDING-BOTTOM: 2px; MARGIN-TOP: -3px; PADDING-LEFT: 2px; WIDTH: 50px; PADDING-RIGHT: 2px; DISPLAY: inline-block; MARGIN-BOTTOM: -2px; LETTER-SPACING: -1px; FONT-SIZE: 11px; PADDING-TOP: 3px}
+.stock-wrap .baseTb2 .state .stand {BORDER-BOTTOM: #d1d1d1 1px solid; BORDER-LEFT: #d1d1d1 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BORDER-TOP: #d1d1d1 1px solid; BORDER-RIGHT: #d1d1d1 1px solid; PADDING-TOP: 2px}
+.stock-wrap .baseTb2 .state .take {BACKGROUND: #f7a629; COLOR: #fff}
+.stock-wrap .baseTb2 .state .end {BACKGROUND: #ca1704; COLOR: #fff}
+.stock-wrap .baseTb2 TR.this A {COLOR: #fff}
+.stock-wrap .baseTb2 TR.this TD {BACKGROUND: #a3a3a3; COLOR: #fff}
+.stock-wrap .baseTb2 TR.this TD.point {BACKGROUND: #5889cb}
+.stock-wrap .baseTb2 TR.this TD.num {BACKGROUND: #5889cb}
+.stock-wrap .baseTb2 TR.this .state .stand {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap .baseTb2 TR.this .state .take {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap .baseTb2 TR.this .state .end {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap .eventTb TD P.title {LINE-HEIGHT: 1.2; MARGIN: 20px 20px 18px 0px; FONT-FAMILY: "굴림", sans-serif; COLOR: #313131; FONT-SIZE: 16px; FONT-WEIGHT: bold}
+.stock-wrap .eventTb TD P.title A {COLOR: #313131; TEXT-DECORATION: none}
+.stock-wrap .eventTb TD SPAN.date {FONT-FAMILY: "굴림", gulim, sans-serif; COLOR: #9a9a9a; FONT-SIZE: 16px; VERTICAL-ALIGN: bottom; FONT-WEIGHT: bold}
+.stock-wrap .eventTb TD SPAN.count {MARGIN-TOP: 3px; COLOR: #9a9a9a; FONT-SIZE: 11px}
+.stock-wrap .current-event LI.first {PADDING-LEFT: 0px}
+.stock-wrap .current-event DD .date {COLOR: #9a9a9a}
+.stock-wrap .current-event DD .date EM {MARGIN: 0px 10px}
+.stock-wrap .baseView .titleArea .num {BACKGROUND: #c81e0a}
+.stock-wrap .baseView .titleArea .name {PADDING-BOTTOM: 10px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 10px}
+.stock-wrap .baseView .titleArea .title {PADDING-BOTTOM: 10px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #5c5c5c; PADDING-TOP: 10px}
+.stock-wrap .baseView .titleArea2 .name {PADDING-LEFT: 37px; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/ico_reply2.gif) #e85811 no-repeat 15px 10px; COLOR: #fff}
+.stock-wrap .baseView .titleArea2 .title {BACKGROUND: #a3a3a3}
+.stock-wrap .baseView .subinfo .left {WIDTH: 40%}
+.stock-wrap .baseView .subinfo .right {TEXT-ALIGN: right; FLOAT: right}
+.stock-wrap UL.nextpage LI.prev {BORDER-BOTTOM: #ecebea 1px solid}
+.stock-wrap UL.nextpage LI.prev STRONG {BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/ico_prev.gif) no-repeat right center}
+.stock-wrap .writeTb TH.first {BORDER-TOP: 0px; PADDING-TOP: 10px}
+.stock-wrap .writeTb TD.first {BORDER-TOP: 0px; PADDING-TOP: 10px}
+.stock-wrap .writeTb TD.end {PADDING-BOTTOM: 10px}
+.stock-wrap .first#itemArea {BACKGROUND: none transparent scroll repeat 0% 0%}
+.stock-wrap .marketList DL.end {BORDER-BOTTOM: 0px}
+.stock-wrap .marketList DL DD.title {COLOR: #313131; FONT-SIZE: 12px; FONT-WEIGHT: bold}
+.stock-wrap .marketList DL DD.title A {COLOR: #313131; FONT-SIZE: 12px; FONT-WEIGHT: bold}
+.stock-wrap .marketList DL DD.title SPAN {TEXT-ALIGN: center; PADDING-BOTTOM: 2px; PADDING-LEFT: 3px; WIDTH: 90px; PADDING-RIGHT: 3px; DISPLAY: inline-block; BACKGROUND: #e58f29; FLOAT: left; COLOR: #fff; PADDING-TOP: 3px}
+.stock-wrap .marketList DL DD.title STRONG {PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; LETTER-SPACING: 0px; MARGIN-LEFT: 100px; PADDING-TOP: 3px}
+.stock-wrap .marketList DL DD.title STRONG.portfolio {MARGIN-LEFT: 0px}
+.stock-wrap .marketList DL DD.subinfo .file {MARGIN: 2px 10px 0px 0px}
+.stock-wrap .freeList LI.first {MARGIN-TOP: 0px}
+.stock-wrap .roundBox .style2.freeList DD.subinfo .text {WIDTH: 510px; DISPLAY: inline-block}
+.stock-wrap .dateArea .date {LINE-HEIGHT: 1; FONT-FAMILY: verdana, Tahoma, Geneva, sans-serif; COLOR: #dfdfdf; FONT-SIZE: 67px; FONT-WEIGHT: bold; PADDING-TOP: 3px}
+.stock-wrap .marketList DL.this DD.title {BACKGROUND: #a3a3a3; COLOR: #fff}
+.stock-wrap .marketList DL.this DD.title A {BACKGROUND: #a3a3a3; COLOR: #fff}
+.stock-wrap .marketList DL.this DD.title SPAN {BACKGROUND: #ca1704}
+.stock-wrap .marketList DL.this DD.cont {BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/line_dot.gif) #ededed repeat-x 0px 100%}
+.stock-wrap .marketList DL.this DT .thumbDate {COLOR: #dfdfdf}
+.stock-wrap .marketList DL.this DT.dateArea .year {COLOR: #585858}
+.stock-wrap .dateArea .this.year {COLOR: #585858}
+.stock-wrap .marketList DL.this DT.dateArea .date {COLOR: #363636}
+.stock-wrap .dateArea .this.date {COLOR: #363636}
+.stock-wrap .freeList DL.this DT {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: #a3a3a3; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap .freeList DL.this DT EM {PADDING-BOTTOM: 11px; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/ico_word_on.gif) #c81e0a no-repeat 15px 10px; COLOR: #fff; PADDING-TOP: 12px}
+.stock-wrap .freeList DL.this DT STRONG {BACKGROUND-IMAGE: none; PADDING-BOTTOM: 11px; PADDING-TOP: 12px}
+.stock-wrap .freeList DL.this DT STRONG A {COLOR: #fff}
+.stock-wrap .freeList DL.this DD.cont {BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/line_dot.gif) #ededed repeat-x 0px 100%}
+.stock-wrap .roundBox DL DD.title STRONG {MARGIN-TOP: -2px; FONT-SIZE: 14px}
+.stock-wrap .roundBox DL DD.title STRONG A {MARGIN-TOP: -2px; FONT-SIZE: 14px}
+.stock-wrap #replyArea DL.title DT {HEIGHT: 23px}
+.stock-wrap #replyArea DL.title DD {LETTER-SPACING: -1px; FONT-SIZE: 11px}
+.stock-wrap .replyList LI.last {BORDER-BOTTOM: medium none}
+.stock-wrap .years .month {POSITION: absolute; TEXT-ALIGN: center; WIDTH: 100%; COLOR: #333; FONT-SIZE: 36px; TOP: 14px; LEFT: 0px}
+.stock-wrap .years .left {POSITION: absolute; TOP: 25px; LEFT: 0px}
+.stock-wrap .years .right {POSITION: absolute; TOP: 25px; RIGHT: 0px}
+.stock-wrap .smsList LI.first {PADDING-LEFT: 0px}
+.stock-wrap .smsList DL.sms DD.new {BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/ico_new_sms.gif) no-repeat 0px 0px}
+.stock-wrap .paging {POSITION: relative; TEXT-ALIGN: center; MARGIN: 0px auto; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #808080; FONT-SIZE: 11px; OVERFLOW: hidden; WORD-SPACING: 2px; PADDING-TOP: 5px}
+.stock-wrap .paging .prev {MARGIN: 0px 5px}
+.stock-wrap .paging .next {MARGIN: 0px 5px}
+.stock-wrap .paging A:hover {COLOR: #c00e0e; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+.stock-wrap .paging A.current {COLOR: #c00e0e; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+.stock-wrap .paging SPAN.current {COLOR: #c00e0e; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+.stock-wrap .paging IMG {MARGIN-TOP: -1px; VERTICAL-ALIGN: middle}
+.stock-wrap .faq-list {BORDER-BOTTOM: #dad9d7 1px solid; LINE-HEIGHT: 1.5; LETTER-SPACING: -1px; PADDING-TOP: 5px}
+.stock-wrap .faq-list LI {PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #ecebea 1px solid; PADDING-TOP: 0px}
+.stock-wrap .faq-list LI.first {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px}
+.stock-wrap .faq-list .faq-q {POSITION: relative; PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; WIDTH: auto; PADDING-RIGHT: 15px; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/ico_q.gif) no-repeat 15px 12px; PADDING-TOP: 15px}
+.stock-wrap .faq-list .faq-q .question {PADDING-LEFT: 40px; WIDTH: 680px; DISPLAY: block; COLOR: #666; FONT-WEIGHT: normal}
+.stock-wrap .faq-list .faq-q .question A {COLOR: #666}
+.stock-wrap .faq-list .faq-q .arrow {POSITION: absolute; WIDTH: 11px; DISPLAY: block; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/ico_fold.gif); HEIGHT: 6px; OVERFLOW: hidden; TOP: 20px; CURSOR: pointer; RIGHT: 17px}
+.stock-wrap .faq-list .current.faq-q .arrow {BACKGROUND-POSITION: left -6px}
+.stock-wrap .faq-list .faq-a {PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; WIDTH: auto; PADDING-RIGHT: 20px; DISPLAY: none; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/line_dot.gif) #f4f4f4 repeat-x 0px 0px; COLOR: #888; PADDING-TOP: 15px}
+.stock-wrap .faq-list .faq-a .answer {PADDING-BOTTOM: 10px; PADDING-LEFT: 40px; DISPLAY: block; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot5/images/common/ico_a.gif) no-repeat 0px 0px}
+.stock-wrap {MIN-HEIGHT: 100%; WIDTH: 1012px; _height: 575px;POSITION: relative;}
+.stock-wrap H1 {WIDTH: 200px; FLOAT: left}
+.stock-wrap #header {PADDING-TOP: 0px;WIDTH: 100%; HEIGHT: 50px; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot11/web/images/top_menu_bg.gif) 0px 0px;}
+.stock-wrap .top_menu {POSITION: relative; WIDTH: auto; PADDING-TOP: 5px;}
+.stock-wrap .top_menu:after {DISPLAY: block; CLEAR: both; CONTENT: ""}
+.stock-wrap .top_menu UL {WIDTH: 100%; FLOAT: left; HEIGHT: 45px; OVERFLOW: hidden}
+.stock-wrap .top_menu UL LI {FLOAT: left}
+.stock-wrap .top_menu UL LI.first {PADDING-LEFT: 10px;}
+.stock-wrap .top_menu UL LI {PADDING-LEFT: 1px;}
+.stock-wrap .appop {POSITION: relative; WIDTH: 100%;height:35px;background-color:#464a64}
+.stock-wrap #apDiv0 {position:absolute;left:37px;z-index:1;top:33px;WIDTH: 800px;height:500px;background-color:#FFFFFF;border:#000 2px solid;}
+.stock-wrap .pop04 {POSITION: relative;WIDTH:auto;height:435px;OVERFLOW-Y: scroll;OVERFLOW-x: hidden;padding:15px}
+.stock-wrap .btn_close {FLOAT:right; margin-top:15px;_margin-top:-13px; PADDING-RIGHT: 10px;}
+.stock-wrap .btn_close2 {FLOAT:right; padding:5px;}
+.stock-wrap #contents {WIDTH: 1012px; height:525px; background-color:#e5e5e5;}
+.stock-wrap #left_con {WIDTH: 430px; height:515px;margin-left:8px; FLOAT: left; display:inline;}
+.stock-wrap .aaa {WIDTH: 408px; height:513px; border: 1px solid #ccc; background-color:#FFF; OVERFLOW: hidden;PADDING:0 10px;}
+.stock-wrap .aaas_1 {WIDTH: 408px; height:301px; border: 1px solid #ccc; background-color:#FFF; OVERFLOW: hidden;PADDING:0 10px;}
+.stock-wrap .table_tit {PADDING-TOP:10px;_PADDING-TOP:8px;PADDING-BOTTOM: 5px; WIDTH: auto;}
+.stock-wrap .table_tit_cd {PADDING-TOP:10px; PADDING-BOTTOM:5px; WIDTH:100%}
+.stock-wrap H3.titleR {PADDING-BOTTOM: 3px;PADDING-RIGHT: 0px; CLEAR: both;PADDING-TOP: 10px;}
+.stock-wrap H3.titleS {PADDING-BOTTOM: 3px;PADDING-LEFT:10px; PADDING-RIGHT: 0px; CLEAR: both;PADDING-TOP: 10px;BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot11/web/images/icon_red.gif) no-repeat 0px 10px;FONT-SIZE: 12px;color:#333;}
+.stock-wrap .table_s {_WIDTH:408px; height:445px; OVERFLOW-Y: scroll; OVERFLOW-x: hidden;}
+.stock-wrap .table_coach {OVERFLOW: hidden;}
+.stock-wrap .bbbs_1 {WIDTH: 408px; height:200px; border: 1px solid #ccc; background-color:#FFFFFF ; OVERFLOW: hidden;PADDING:0 10px;}
+.stock-wrap #right_con {WIDTH: 553px; height:513px; border: 1px solid #ccc; background-color:#FFFFFF; margin-left:9px; FLOAT: left; OVERFLOW: hidden;}
+.stock-wrap .ccc {WIDTH:531px; OVERFLOW: hidden; height:210px; PADDING-right:10px; PADDING-left:10px;}
+.stock-wrap .ddd {WIDTH:531px; OVERFLOW: hidden; PADDING-right:10px; PADDING-left:10px;}
+.stock-wrap #titleArea .location {TEXT-ALIGN: right; WIDTH: 50%; FLOAT: right; LETTER-SPACING: -1px; FONT-SIZE: 11px}
+.stock-wrap #titleArea .location SPAN {PADDING-LEFT: 8px; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot11/web/images/bar_navi.gif) no-repeat 0px 2px; MARGIN-LEFT: 4px}
+.stock-wrap #titleArea .title {WIDTH: 50%; FLOAT: left}
+.stock-wrap #titleArea .title H2 {HEIGHT: 37px}
+.stock-wrap #titleArea .title SPAN {DISPLAY: block}
+.stock-wrap .yield {display : inline;}
+.stock-wrap .yield DL {WIDTH: auto;}
+.stock-wrap .yield DL DT {WIDTH: 350px; FLOAT:left}
+.stock-wrap .yield DL DD {WIDTH: auto; MARGIN-LEFT: 360px; _MARGIN-LEFT:360px;}
+.stock-wrap .miniTb {WIDTH: 100% ;BORDER-TOP: #a0a0a0 2px solid;BORDER-bottom: #a0a0a0 2px solid; FLOAT:left ;height:170px}
+.stock-wrap .miniTb TH {BORDER-RIGHT: #ecebea 1px solid;BORDER-BOTTOM: #ecebea 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; BACKGROUND: #fbfafa; PADDING-TOP:5px;TEXT-ALIGN:left}
+.stock-wrap .miniTb TH.line {BORDER-left: #ecebea 1px solid;BORDER-BOTTOM: #ecebea 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; BACKGROUND: #fbfafa; PADDING-TOP:5px;TEXT-ALIGN:left}
+.stock-wrap .miniTb TD {BORDER-BOTTOM: #ecebea 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; PADDING-TOP: 5px;COLOR: #888888;TEXT-ALIGN: left;LINE-HEIGHT: 1.4;}
+.stock-wrap .miniTb TD.point {COLOR: #ce2022;}
+.stock-wrap .miniTb TD span.point {COLOR: #ce2022;}
+.stock-wrap .miniTb .top {background-color:#666666; color:#fff}
+.stock-wrap .miniTb TD.blueW {COLOR: #6881a2}
+.stock-wrap .miniTb TD.red {COLOR: #ec4b2a}
+.stock-wrap .pointTb {WIDTH: 100%}
+.stock-wrap .pointTb TH {BORDER-BOTTOM: #3c3c3c 1px solid;BORDER-left: #d1d1d1 1px solid;BORDER-right: #d1d1d1 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #fbfafa; BORDER-TOP: #d1d1d1 1px solid; PADDING-TOP: 7px}
+.stock-wrap .pointTb TD {BORDER-BOTTOM: #d1d1d1 1px solid;BORDER-left: #d1d1d1 1px solid;BORDER-right: #d1d1d1 1px solid; TEXT-ALIGN: center; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 7px}
+.stock-wrap .pointTb TD.point {BACKGROUND: #a3a3a3 ;COLOR: #FFFFFF;}
+.stock-wrap .gray666 {COLOR: #666666; padding-top:3px;}
+.stock-wrap .graph_box {WIDTH: 529px ; BACKGROUND: #f3f3f3; BORDER:#dedede 1px solid; MARGIN-TOP: 10px;}
+.stock-wrap .graph_box DL {PADDING-BOTTOM: 10px; PADDING-LEFT: 15px; PADDING-RIGHT:15px; PADDING-TOP: 10px;}
+.stock-wrap .graph_box DL DD {WIDTH: 100%; PADDING-TOP: 5px; height:160px; OVERFLOW-Y: scroll; OVERFLOW-x: hidden;}
+.stock-wrap .graph_box2 {WIDTH:100% ; MARGIN-top:5px;}
+.stock-wrap .graph_box2 TD {BORDER: #000000 1px solid; TEXT-ALIGN: center; PADDING-BOTTOM: 3px; PADDING-RIGHT: 0px; PADDING-TOP: 5px;COLOR: #FFFFFF;}
+.stock-wrap .graph_box2 TD.a {BACKGROUND: #d00800;}
+.stock-wrap .graph_box2 TD.b {BACKGROUND: #ee4d00;}
+.stock-wrap .graph_box2 TD.c {BACKGROUND: #ff8700;}
+.stock-wrap .graph_box2 TD.d {BACKGROUND: #ffa800;}
+.stock-wrap .money_graph table {WIDTH:100%;}
+.stock-wrap .money_graph td {padding: 4px 6px;}
+.stock-wrap .money_graph th {text-align:right; WIDTH: 110px;padding-right: 15px;}
+.stock-wrap .money_graph td.value {border-left: 1px solid #3e3e3e; background-color:#fff;padding:0;}
+.stock-wrap .money_graph td.value img {vertical-align: middle; margin: 5px 5px 5px 2px;}
+.stock-wrap .money_graph td.last {border-left: 1px solid #3e3e3e;border-bottom:1px solid #3e3e3e;background-color:#fff;padding:0;}
+.stock-wrap .money_graph td.last img {vertical-align: middle; margin: 5px 5px 5px 2px;}
+.stock-wrap .money_graph td.first {border-left: 1px solid #3e3e3e; background-color:#fff; margin: 15px 5px 5px 2px;}
+.stock-wrap .money_graph td.first img {vertical-align: middle; margin: 15px 5px 5px 2px;}
+.stock-wrap .strategy_box {background-color:#f6f3e9;BORDER: #dcd7c7 1px solid;WIDTH: 408px;}
+.stock-wrap .strategy_box TD {TEXT-ALIGN: left; PADDING-BOTTOM: 3px; PADDING-RIGHT: 0px; PADDING:10px; COLOR: #c81e0a;}
+.stock-wrap .strategy {TEXT-ALIGN: left; PADDING-BOTTOM: 3px; PADDING-left:20px; PADDING-TOP: 10px;COLOR: #c81e0a; FONT-SIZE:14px; FONT-WEIGHT: bold ;}
+.stock-wrap .strategy_box TD img {TEXT-ALIGN: right;VERTICAL-ALIGN: middle}
+.stock-wrap #full_con {WIDTH: 990px; height:513px; border: 1px solid #ccc; background-color:#FFFFFF; margin-left:9px; FLOAT: left; OVERFLOW: hidden;}
+.stock-wrap .full_area {WIDTH:968px; OVERFLOW: hidden;PADDING-right:10px; PADDING-left:10px;}
+.stock-wrap .full_top {WIDTH:968px; OVERFLOW: hidden; height:70px; PADDING-right:10px; PADDING-left:10px;}
+.stock-wrap .full_top p {padding:13px 10px 8px 10px; background-color:#f7f7f7}
+.stock-wrap .left_area2 {WIDTH:531px; overflow-y: scroll; overflow-x:hidden; height:510px; PADDING-right:10px; PADDING-left:10px;}
+.stock-wrap .left_area2 .none {text-align:center; border-top: 1px solid #ccc; padding-top:200px}
+.stock-wrap .left_area3 {WIDTH:991px; margin:0 10px; OVERFLOW: hidden; height:513px}
+.stock-wrap h3.title_ana {margin-top:10px; margin-bottom:10px; border: 1px solid #ccc; padding:10px 10px 5px 10px; font-size:15px; color:#fff; text-align:center; background-color:#354053}
+.stock-wrap h3.title_ana span {font-size:12px; font-weight:normal}
+.stock-wrap .aaa_2 {WIDTH: 408px; height:308px; border: 1px solid #ccc; background-color:#FFFFFF; OVERFLOW: hidden;PADDING:0 10px;}
+.stock-wrap .bbb_2 {WIDTH: 408px; height:173px; border: 1px solid #ccc; background-color:#FFFFFF ; OVERFLOW: hidden;PADDING:10px;}
+.stock-wrap .tbox_ana {margin-top:10px;OVERFLOW-Y: scroll; height:250px; line-height:18px; color:#666}
+.stock-wrap .tabArea3 {POSITION: relative; WIDTH: auto}
+.stock-wrap .tabArea3:after {DISPLAY: block; CLEAR: both; CONTENT: ""}
+.stock-wrap .tabArea3 UL {WIDTH: 100%; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot11/web/images/bg_tab.gif) repeat-x 0px 0px; FLOAT: left; HEIGHT: 33px; OVERFLOW: hidden}
+.stock-wrap .tabArea3 UL LI {FLOAT: left}
+.stock-wrap .tabArea3 UL LI.first A {BACKGROUND: none transparent scroll repeat 0% 0%}
+.stock-wrap .tabArea3 UL LI A {PADDING-BOTTOM: 8px; PADDING-LEFT: 73px; PADDING-RIGHT: 73px; DISPLAY: inline-block; BACKGROUND: url(http://img.thinkpool.com/concert/qbot/qbot11/web/images/bar_tab.gif) no-repeat 0px center; PADDING-TOP: 10px}
+.stock-wrap .tabArea3 UL LI A.on {BORDER-BOTTOM: 0px; BORDER-LEFT: #da2f5b 2px solid; PADDING-LEFT: 60px; PADDING-RIGHT: 60px; BACKGROUND: #fff; BORDER-TOP: #da2f5b 2px solid; BORDER-RIGHT: #da2f5b 2px solid}
+.stock-wrap #left_con .none {text-align:center; padding-top:80px}
