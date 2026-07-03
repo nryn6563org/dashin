@@ -160,6 +160,17 @@
 .qbot-embed-m .q_list_06 caption {visibility:hidden;overflow:hidden;width:1px;height:1px;font-size:0;line-height:0}
 .qbot-embed-m .q_list_06 .list_bottom_06 {border-bottom:1px solid #d7d7d7;}
 
+.qbot-embed-m .qbot-inline-frame {clear:both; margin:0 5px 20px; font-size:13px;}
+.qbot-embed-m .qbot-inline-frame h3 {margin:0 0 7px; padding:8px 0 5px; color:#333; font-size:1.1em; font-weight:bold;}
+.qbot-embed-m .qbot-inline-frame .qbot-summary {display:block; margin-bottom:10px; padding:8px; border:1px solid #d7d7d7; background:#f8f7f3;}
+.qbot-embed-m .qbot-inline-frame .qbot-summary dt {float:left; width:34%; clear:left; padding:4px 0; color:#556181;}
+.qbot-embed-m .qbot-inline-frame .qbot-summary dd {margin-left:36%; padding:4px 0;}
+.qbot-embed-m .qbot-inline-frame .qbot-empty {padding:18px 5px; text-align:center; color:#666;}
+.qbot-embed-m .qbot-inline-frame .qbot-desc {margin-bottom:10px; line-height:1.5em; color:#555;}
+.qbot-embed-m .qbot-inline-frame .qbot-list {padding-left:16px; list-style:disc;}
+.qbot-embed-m .qbot-inline-frame .qbot-list li {margin-bottom:6px; padding:0;}
+.qbot-embed-m .qbot-chart-placeholder {margin-top:8px; padding:34px 8px; border:1px solid #d7d7d7; background:#f8f7f3; color:#666; text-align:center;}
+
 .qbot-embed-m .p_tab {height:51px; margin:0 auto 20px; text-align:center; width:320px; }
 .qbot-embed-m .p_tab_warp {background:url(../img/p_tab_bg.jpg) repeat-x; }
 .qbot-embed-m .p_tab ui {text-align:center; width:320px; margin:0 auto; display:block;}
@@ -1586,16 +1597,13 @@ background:url(../img/btn_st_00000000_sell_off.jpg) no-repeat; background-size: 
 
 
 /* ===== default_02.css ===== */
-.qbot-embed-m @import url(http://img.thinkpool.com/concert/qbot/qbot11/mb/css2/widget.css);
-@import url(http://img.thinkpool.com/concert/qbot/qbot11/mb/css/popup.css);
-@import url(http://img.thinkpool.com/concert/qbot/qbot11/mb/css/button.css);
 
 /*	주석처리 - FONT를 안드로이드PHONE OR IPHONE시스템 경로에서 가져오기 위해
 @font-face {
 font-family: "Rix고딕 B";
 src: url( 'file:///android_asset/rixgothic.ttf' );
 src: url('../../font/rixgothic.ttf') format("truetype");
-src: url('http://img.thinkpool.com/concert/qbot/qbot11/mb/images/RixGoB.woff') format("truetype");
+src: url('../img/RixGoB.woff') format("truetype");
 }
 @font-face {
 font-family: "Droid Sans";
@@ -1798,10 +1806,10 @@ body{ font-size: 22px; }
        -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; }
 
 @media screen and (max-width: 320px) {
-.qbot-embed-m .u_it {background:#fff url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/search_320.png) no-repeat right; }
+.qbot-embed-m .u_it {background:#fff url(../img/search_320.png) no-repeat right; }
 }
 @media screen and (min-width: 321px) and (max-width:1280px) {
-.qbot-embed-m .u_it {background:#fff url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/search.png) no-repeat right; }
+.qbot-embed-m .u_it {background:#fff url(../img/search.png) no-repeat right; }
 }
 
 /********************************************************************************************************************************/
@@ -1816,7 +1824,7 @@ body{ font-size: 22px; }
 
 .qbot-embed-m .c-table-post {max-width:100%; text-align:left; border-collapse:collapse; border-top:1px solid #cacbd5 }
 
-.qbot-embed-m .c-table-post thead th {position:relative; background:#ebecee url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/line.png) repeat-y; height:45px; text-align:center; border-bottom:1px solid #cacbd5; border-top:1px solid #cacbd5; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);*/ color:#556181; }
+.qbot-embed-m .c-table-post thead th {position:relative; background:#ebecee url(../images/line.png) repeat-y; height:45px; text-align:center; border-bottom:1px solid #cacbd5; border-top:1px solid #cacbd5; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);*/ color:#556181; }
 
 .qbot-embed-m .c-table-post thead th:first-child {
 }
@@ -1829,7 +1837,7 @@ body{ font-size: 22px; }
 .qbot-embed-m .c-table-post .th_br {border-right:1px solid #b7c1c2; border-bottom:1px solid #f8f7f3; background:#bab3a3; }
 .qbot-embed-m .c-table-post .th_bot {border-right:1px solid #b7c1c2; border-bottom:1px solid #b7c1c2; background:#d7e1e0; }
 .qbot-embed-m .c-table-post .th_bot2 {border-right:1px solid #b7c1c2; border-bottom:1px solid #b7c1c2; background:#eae7de; }
-.qbot-embed-m .c-table-post thead th.th_bot3 {background:#d7e1e0 url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/line.png) repeat-y; }
+.qbot-embed-m .c-table-post thead th.th_bot3 {background:#d7e1e0 url(../images/line.png) repeat-y; }
 .qbot-embed-m .c-table-post .tdline {border-right:1px solid #b7c1c2; border-bottom:1px solid #f8f7f3; background:#d7e1e0; text-align:center }
 .qbot-embed-m .c-table-post .nbot {border-bottom:1px solid #b7c1c2; padding:3px 20px 18px 0;  }
 
@@ -2057,7 +2065,7 @@ body{ font-size: 22px; }
 
 .qbot-embed-m .c-table-list {max-width:100%; text-align:left; border-collapse:collapse; border-top:1px solid #b7c1c2;}
 
-.qbot-embed-m .c-table-list thead th {position:relative; background:#d7e1e0 url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/line.png) repeat-y; text-align:center;
+.qbot-embed-m .c-table-list thead th {position:relative; background:#d7e1e0 url(../images/line.png) repeat-y; text-align:center;
 border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);*/ }
 
 .qbot-embed-m .c-table-list thead th .bot {border-bottom:1px solid #f8f7f3;}
@@ -2101,7 +2109,7 @@ border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.
 .c-send { position:relative; padding:20px 0 20px 0; text-align:center; }
 }*/
 /* 하이픈 */
-.qbot-embed-m .hypen {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/hypen.png) no-repeat center; text-indent:-9999px; width:20px; height:31px; line-height:31px;}
+.qbot-embed-m .hypen {background:url(../img/hypen.png) no-repeat center; text-indent:-9999px; width:20px; height:31px; line-height:31px;}
 
 
 
@@ -2161,27 +2169,27 @@ border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.
 
 /* 폰트 및 아이콘스타일 */
 
-.qbot-embed-m .icon_k {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/icon_k.png) no-repeat; background-position:5 0; padding:2px 0 3px 25px; display:block;}
+.qbot-embed-m .icon_k {background:url(../img/icon_k.png) no-repeat; background-position:5 0; padding:2px 0 3px 25px; display:block;}
 
-.qbot-embed-m .icon_a {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/icon_a.png) no-repeat; width:8px; height:8px;}
+.qbot-embed-m .icon_a {background:url(../img/icon_a.png) no-repeat; width:8px; height:8px;}
 
 /*@media screen and (max-width: 320px) {
-.icon_s { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet2.png) no-repeat; background-position:0 4px; padding-left:6px;  }
+.icon_s { background:url(../img/bullet2.png) no-repeat; background-position:0 4px; padding-left:6px;  }
 .s05010603 .icon_s { padding-left:10px; background-position:0 2px; }
-.icon_ss { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet2.png) no-repeat; background-position:0 45%; padding-left:10px; }
-.icon_s2 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet2.png) no-repeat; display:inline-block; width:7px; height:7px }
+.icon_ss { background:url(../img/bullet2.png) no-repeat; background-position:0 45%; padding-left:10px; }
+.icon_s2 { background:url(../img/bullet2.png) no-repeat; display:inline-block; width:7px; height:7px }
 }
 @media screen and (min-width: 321px) and (max-width:1280px) {
-.icon_s { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet2.png) no-repeat; background-position:0 10%; padding-left:10px; }
-.icon_ss { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet2.png) no-repeat; background-position:0 45%; padding-left:10px; }
-.icon_s2 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet2.png) no-repeat; display:inline-block; width:7px; height:7px }
+.icon_s { background:url(../img/bullet2.png) no-repeat; background-position:0 10%; padding-left:10px; }
+.icon_ss { background:url(../img/bullet2.png) no-repeat; background-position:0 45%; padding-left:10px; }
+.icon_s2 { background:url(../img/bullet2.png) no-repeat; display:inline-block; width:7px; height:7px }
 }
 */
 
-.qbot-embed-m .icon_face {width:32px; height:32px; display:block; background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/facebook.png) no-repeat;
+.qbot-embed-m .icon_face {width:32px; height:32px; display:block; background:url(../img/facebook.png) no-repeat;
 	margin:6px 15px 6px 6px;}
 
-.qbot-embed-m .icon_twi {width:32px; height:32px; display:block; background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/twitter.png) no-repeat;
+.qbot-embed-m .icon_twi {width:32px; height:32px; display:block; background:url(../img/twitter.png) no-repeat;
 	margin:6px 15px 6px 6px;}
 
 .qbot-embed-m .num {text-align:right; font-family: "Droid Sans", "Rix고딕 B";}
@@ -2261,13 +2269,13 @@ border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.
 .qbot-embed-m .icon_call {display:block; float:right;}
 
 /*@media screen and (max-width: 320px) {
-.icon_call { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/call_320.png) no-repeat; width:31px; height:31px; margin:7px 0 0 10px}
+.icon_call { background:url(../img/call_320.png) no-repeat; width:31px; height:31px; margin:7px 0 0 10px}
 }
 @media screen and (min-width: 321px) and (max-width:1280px) {
-.icon_call { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/call.png) no-repeat; width:45px; height:45px; margin:10px 0 0 20px}
+.icon_call { background:url(../img/call.png) no-repeat; width:45px; height:45px; margin:10px 0 0 20px}
 }
 
-.rep { background:#eae7e0 url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/reply.png) no-repeat;  }
+.rep { background:#eae7e0 url(../img/reply.png) no-repeat;  }
 
 @media screen and (max-width: 320px) {
 .rep { background-position:8px 8px;  padding-left:70px; }
@@ -2308,15 +2316,15 @@ border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.
 
 
 .qbot-embed-m .sec-list {float:left;}
-.qbot-embed-m .secret { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/secret.png) no-repeat; width:10px; height:15px; line-height:15px; float:left;}
+.qbot-embed-m .secret { background:url(../img/secret.png) no-repeat; width:10px; height:15px; line-height:15px; float:left;}
 
 .qbot-embed-m .sns_name {word-break:break-all;}
 .qbot-embed-m .sns_nick {font-size:1.2em; height:25px; margin:0 10px 0 10px; color:#2f9cc9; overflow:hidden;}
 .qbot-embed-m .sns_id { font-size:1.2em; line-height:150%; height:25px; margin:0 10px 10px 10px; vertical-align:bottom; overflow:hidden;}
 
-.qbot-embed-m .patt_bg {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/patt_bg.gif); min-height:100%;}
-.qbot-embed-m .patt_bg.bot {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/patt_bg.gif); min-height:100%; border-radius:0 0 0.7em 0.7em;}
-.qbot-embed-m .sns_top {position:absolute; position:relative; background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/arrow_top.png) no-repeat; width:33px; height:22px; margin:5px auto 0; z-index:50;}
+.qbot-embed-m .patt_bg {background:url(../img/patt_bg.gif); min-height:100%;}
+.qbot-embed-m .patt_bg.bot {background:url(../img/patt_bg.gif); min-height:100%; border-radius:0 0 0.7em 0.7em;}
+.qbot-embed-m .sns_top {position:absolute; position:relative; background:url(../img/arrow_top.png) no-repeat; width:33px; height:22px; margin:5px auto 0; z-index:50;}
 .qbot-embed-m .sns_sbg {position:absolute; position:relative; overflow:hidden; background:#f8f7f3; border-radius: 0.6em; border:1px solid #909090; margin:-1px 20px 20px 20px; padding:20px; z-index:10;}
 .qbot-embed-m .sns_img {padding:3px 0 0 10px;}
 
@@ -2325,32 +2333,32 @@ border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.
 
 /* 공인인증 메인 */
 .qbot-embed-m .mrb .btn-whi2 {margin-bottom:5px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box;}
-.qbot-embed-m .btn-whi2 .icon {float:left; background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/wline.png) repeat-y; background-position:right 0;}
+.qbot-embed-m .btn-whi2 .icon {float:left; background:url(../img/wline.png) repeat-y; background-position:right 0;}
 
 /*@media screen and (max-width: 320px) {
 .btn-whi2 .icon { margin:5px 15px 5px 10px;}
 .btn-whi2 .icons { width:45px; height:37px;}
-.btn-whi2 .icon1 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-1_320.png) no-repeat}
-.btn-whi2 .icon2 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-2_320.png) no-repeat}
-.btn-whi2 .icon3 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-3_320.png) no-repeat}
-.btn-whi2 .icon4 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-4_320.png) no-repeat}
-.btn-whi2 .icon5 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-5_320.png) no-repeat}
-.btn-whi2 .icon6 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-6_320.png) no-repeat}
-.btn-whi2 .icon7 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-7_320.png) no-repeat}
-.btn-whi2 .icon8 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-8_320.png) no-repeat}
+.btn-whi2 .icon1 { background:url(../img/s01020101-1_320.png) no-repeat}
+.btn-whi2 .icon2 { background:url(../img/s01020101-2_320.png) no-repeat}
+.btn-whi2 .icon3 { background:url(../img/s01020101-3_320.png) no-repeat}
+.btn-whi2 .icon4 { background:url(../img/s01020101-4_320.png) no-repeat}
+.btn-whi2 .icon5 { background:url(../img/s01020101-5_320.png) no-repeat}
+.btn-whi2 .icon6 { background:url(../img/s01020101-6_320.png) no-repeat}
+.btn-whi2 .icon7 { background:url(../img/s01020101-7_320.png) no-repeat}
+.btn-whi2 .icon8 { background:url(../img/s01020101-8_320.png) no-repeat}
 .btn-whi2 .icon.line1 { line-height:57px }
 }
 @media screen and (min-width: 321px) and (max-width:1280px) {
 .btn-whi2 .icon { margin:10px 15px 0 20px;   }
 .btn-whi2 .icons { width:60px; height:50px;  }
-.btn-whi2 .icon1 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-1.png) no-repeat}
-.btn-whi2 .icon2 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-2.png) no-repeat}
-.btn-whi2 .icon3 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-3.png) no-repeat}
-.btn-whi2 .icon4 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-4.png) no-repeat}
-.btn-whi2 .icon5 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-5.png) no-repeat}
-.btn-whi2 .icon6 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-6.png) no-repeat}
-.btn-whi2 .icon7 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-7.png) no-repeat}
-.btn-whi2 .icon8 { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020101-8.png) no-repeat}
+.btn-whi2 .icon1 { background:url(../img/s01020101-1.png) no-repeat}
+.btn-whi2 .icon2 { background:url(../img/s01020101-2.png) no-repeat}
+.btn-whi2 .icon3 { background:url(../img/s01020101-3.png) no-repeat}
+.btn-whi2 .icon4 { background:url(../img/s01020101-4.png) no-repeat}
+.btn-whi2 .icon5 { background:url(../img/s01020101-5.png) no-repeat}
+.btn-whi2 .icon6 { background:url(../img/s01020101-6.png) no-repeat}
+.btn-whi2 .icon7 { background:url(../img/s01020101-7.png) no-repeat}
+.btn-whi2 .icon8 { background:url(../img/s01020101-8.png) no-repeat}
 .btn-whi2 .icon.line1 { line-height:65px }
 }*/
 
@@ -2388,7 +2396,7 @@ border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.
 /* 인증서가져오기 */
 
 
-.qbot-embed-m .t_img {height:201px; background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020109-1.png) no-repeat center top;}
+.qbot-embed-m .t_img {height:201px; background:url(../img/s01020109-1.png) no-repeat center top;}
 
 /*@media screen and (max-width: 320px){ 
 .t_img { background-size: auto 130px; height:130px; } 
@@ -2397,7 +2405,7 @@ border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.
 
 
 /* 인증서내보내기*/
-.qbot-embed-m .icon_cer {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/icon_cer.png) no-repeat; width:48px; height:41px; margin:12px 6px;}
+.qbot-embed-m .icon_cer {background:url(../img/icon_cer.png) no-repeat; width:48px; height:41px; margin:12px 6px;}
 .qbot-embed-m .t_frame {display:inline-block; width:58px; height:58px; margin:15px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; border:1px solid #000201; background:#504d48; 
 	background: -moz-linear-gradient(top, #504d48, #2c2417); box-shadow: inset 0 1px 3px #000; -webkit-box-shadow:inset 0 1px 3px #000;}
 	
@@ -2407,17 +2415,17 @@ border-bottom:1px solid #b7c1c2; /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.
 .qbot-embed-m .t_gr.mrl10 {margin-left:10px;}	
 .qbot-embed-m .t_br {font-size:0.9em; color:#a25706; clear:both;}
 
-.qbot-embed-m .t_next {display:block; background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020110_next2.png) no-repeat; width:17px; height:31px; margin-right:10px;}
+.qbot-embed-m .t_next {display:block; background:url(../img/s01020110_next2.png) no-repeat; width:17px; height:31px; margin-right:10px;}
 
 
 /* 처음거래 시작하기 메인 */
 .qbot-embed-m .mrb .btn-whi3 {margin-bottom:5px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; \}
 .qbot-embed-m .btn-whi3-txt { 
-background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020110_next1.png) no-repeat; background-position:95% 50%; 
+background:url(../img/s01020110_next1.png) no-repeat; background-position:95% 50%; 
 display:table_cell; vertical-align:middle; padding:20px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; 
 }
 /*@media screen and (max-width: 320px){ 
-.btn-whi3-txt { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s01020110_next1_320.png) no-repeat; background-position:95% 50%; padding:15px} 
+.btn-whi3-txt { background:url(../img/s01020110_next1_320.png) no-repeat; background-position:95% 50%; padding:15px} 
 }*/
 
 .qbot-embed-m .btn-whi3-txt .t_gr {font-size:0.9em; font-weight:normal;}
@@ -2430,14 +2438,14 @@ display:table_cell; vertical-align:middle; padding:20px; box-sizing:border-box; 
 
 
 /* MY메뉴편집 */ 
-.qbot-embed-m .icon_info {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s050303_info.png) no-repeat; width:20px; height:20px;}
+.qbot-embed-m .icon_info {background:url(../img/s050303_info.png) no-repeat; width:20px; height:20px;}
 
 .qbot-embed-m .my_list1 {text-align:center;}
 .qbot-embed-m .my_list1 li {display:inline-block;}
 
-.qbot-embed-m .my_add1 {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s050303_down.png) no-repeat center top; height:135px; padding:0 15px 1px 15px; text-align:center;}
+.qbot-embed-m .my_add1 {background:url(../img/s050303_down.png) no-repeat center top; height:135px; padding:0 15px 1px 15px; text-align:center;}
 .qbot-embed-m .my_add1_bg {width:100%; border-bottom:1px solid #a9a59e; height:135px;}
-.qbot-embed-m .my_add1_btn {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s050303_add.png) no-repeat; width:162px; height:107px; display:block; margin:0 auto;}
+.qbot-embed-m .my_add1_btn {background:url(../img/s050303_add.png) no-repeat; width:162px; height:107px; display:block; margin:0 auto;}
 
 .qbot-embed-m .my_add2 {padding:0 15px 0 15px;}
 .qbot-embed-m .my_list2 {border-bottom:1px solid #a9a59e;border-top:1px solid #eae9e4;padding:20px 0 20px 0;text-align:center;}
@@ -2449,11 +2457,11 @@ display:table_cell; vertical-align:middle; padding:20px; box-sizing:border-box; 
 
 /* 환경설정 */
 .qbot-embed-m .setup_txt {font-size:1.3em;}
-.qbot-embed-m .t_next2 {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/arrow_right.png) no-repeat; background-position:90% 50%; display:table-cell; vertical-align:middle; padding:20px; bix-sizing:border-box;  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box;}
+.qbot-embed-m .t_next2 {background:url(../img/arrow_right.png) no-repeat; background-position:90% 50%; display:table-cell; vertical-align:middle; padding:20px; bix-sizing:border-box;  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box;}
 
 
 /* 이용약관 스타일 */
-.qbot-embed-m h4.base {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet3.png) no-repeat; background-position:0 4px; margin:10px 10px 0 5px; padding-left:20px; line-height:150%;}
+.qbot-embed-m h4.base {background:url(../img/bullet3.png) no-repeat; background-position:0 4px; margin:10px 10px 0 5px; padding-left:20px; line-height:150%;}
 
 .qbot-embed-m P.p_h4a {padding-left:25px !important; margin-bottom: 5px; line-height:150%;}
 
@@ -2512,7 +2520,7 @@ display:table_cell; vertical-align:middle; padding:20px; box-sizing:border-box; 
 .qbot-embed-m div.rule_box2 h5.em {
 	font-size: 1.1em; margin-bottom:10px;
 }
-.qbot-embed-m ul.cont_list li {line-height: 150%; padding:10px 0 10px 10px; background: url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/00_common_bullet1.png) no-repeat 0 15px; 
+.qbot-embed-m ul.cont_list li {line-height: 150%; padding:10px 0 10px 10px; background: url(../img/00_common_bullet1.png) no-repeat 0 15px; 
 }
 
 .qbot-embed-m p.tit_rule {margin-bottom:10px; FONT-WEIGHT: bold;
@@ -2543,13 +2551,13 @@ display:table_cell; vertical-align:middle; padding:20px; box-sizing:border-box; 
 .qbot-embed-m .info .left {float:left; display:inline-block; width:35%; padding-top:20px; line-height:150%;}
 .qbot-embed-m .info .left .tit {font-size:1.15em;}
 .qbot-embed-m .info .right {float:left; display:inline-block; width:65%;}
-.qbot-embed-m .info_next {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/s010203_next.png) no-repeat; width:31px; height:17px; margin:7px auto; text-indent:-10000px;}
+.qbot-embed-m .info_next {background:url(../img/s010203_next.png) no-repeat; width:31px; height:17px; margin:7px auto; text-indent:-10000px;}
 
 .qbot-embed-m .info-detail {margin:0 10px 0 10px; line-height:150%; border-radius: 0.4em; border:1px solid #bababa; background:#e7e3da; padding:10px;}
 
 .qbot-embed-m .info-detail.mrb10 {margin:0 10px 10px 10px;}
 
-.qbot-embed-m .info-detail .title {background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet3.png) no-repeat; padding-left:20px; line-height:150%;}
+.qbot-embed-m .info-detail .title {background:url(../img/bullet3.png) no-repeat; padding-left:20px; line-height:150%;}
 
 
 /*@media screen and (max-width: 320px) {
@@ -2561,7 +2569,7 @@ display:table_cell; vertical-align:middle; padding:20px; box-sizing:border-box; 
 .info-detail .stxt li { margin:5px 0 0 10px; padding-left:10px;}
 }*/
 
-.qbot-embed-m .info-detail .stxt li { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet1.png) no-repeat; background-position:0 7px; line-height:150%; color:#606060; font-size:0.9em;}
+.qbot-embed-m .info-detail .stxt li { background:url(../img/bullet1.png) no-repeat; background-position:0 7px; line-height:150%; color:#606060; font-size:0.9em;}
 .qbot-embed-m .info-detail .stxt2 li { line-height:150%; color:#606060; font-size:0.9em; padding-bottom:10px;}
 .qbot-embed-m .info-detail .black {color:#000;}
 
@@ -2574,13 +2582,13 @@ display:table_cell; vertical-align:middle; padding:20px; box-sizing:border-box; 
 
 /*@media screen and (max-width: 320px) {
 .info2 .left { float:left; display:inline-block; }
-.info2 .imgbg { float:left; display:inline-block; width:67px; height:95px;  margin:5px 5px 10px 0; /*background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/imgbg.png) no-repeat; */
+.info2 .imgbg { float:left; display:inline-block; width:67px; height:95px;  margin:5px 5px 10px 0; /*background:url(../img/imgbg.png) no-repeat; */
 .qbot-embed-m .info2 img { width:65px; height:93px;}
 .qbot-embed-m .info2 .right { float:left; display:inline-block;}
 /*}
 @media screen and (min-width: 321px) and (max-width:1280px) {
 .info2 .left { float:left; display:inline-block;  }
-.info2 .imgbg { float:left; display:inline-block; width:89px; height:139px;  margin:10px 10px 20px 0; /*background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/imgbg.png) no-repeat; */
+.info2 .imgbg { float:left; display:inline-block; width:89px; height:139px;  margin:10px 10px 20px 0; /*background:url(../img/imgbg.png) no-repeat; */
 .qbot-embed-m .info2 img { width:87px; height:135px;}
 .qbot-embed-m .info2 .right { float:left; display:inline-block;}
 /*}
@@ -2611,13 +2619,13 @@ display:table_cell; vertical-align:middle; padding:20px; box-sizing:border-box; 
 }
 */.qbot-embed-m */*/
 
-.info2-detail .stxt li { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet1.png) no-repeat; background-position:0 7px; 
+.info2-detail .stxt li { background:url(../img/bullet1.png) no-repeat; background-position:0 7px; 
 margin:5px 0 0 0; padding-left:10px; line-height:150%; color:#606060; font-size:0.95em; }
 
-.qbot-embed-m .info2-detail .stxt2 li { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet1.png) no-repeat; background-position:0 7px; 
+.qbot-embed-m .info2-detail .stxt2 li { background:url(../img/bullet1.png) no-repeat; background-position:0 7px; 
 margin:5px 0 20px 0; padding-left:10px; line-height:150%; color:#606060; font-size:0.95em;}
 
-.qbot-embed-m .info2-detail .stxt3 li { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet1.png) no-repeat; background-position:0 7px; 
+.qbot-embed-m .info2-detail .stxt3 li { background:url(../img/bullet1.png) no-repeat; background-position:0 7px; 
 margin:5px 0 10px 0; padding-left:10px; line-height:150%; color:#606060; font-size:0.95em; }
 
 
@@ -2665,7 +2673,7 @@ margin:5px 0 10px 0; padding-left:10px; line-height:150%; color:#606060; font-si
 .orange-tit.red { color:#ed1c24; }
 .orange-img { padding-bottom:20px;text-align:center }
 .orange-list {margin:12px 0 20px 0px }
-.orange-list li { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet1.png) no-repeat; background-position:0 7px; margin:0 10px 5px 30px; 
+.orange-list li { background:url(../img/bullet1.png) no-repeat; background-position:0 7px; margin:0 10px 5px 30px; 
 padding-left:10px; line-height:150%; color:#606060;  }
 }
 @media screen and (min-width: 321px) and (max-width:1280px) {
@@ -2675,7 +2683,7 @@ padding-left:10px; line-height:150%; color:#606060;  }
 .orange-tit.red { color:#ed1c24; }
 .orange-img { padding-bottom:30px;text-align:center }
 .orange-list {margin:12px 0 30px 0px }
-.orange-list li { background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet1.png) no-repeat; background-position:0 7px; margin:0 10px 5px 40px; 
+.orange-list li { background:url(../img/bullet1.png) no-repeat; background-position:0 7px; margin:0 10px 5px 40px; 
 padding-left:10px; line-height:150%; color:#606060; font-size:0.9em;  }
 
 }
@@ -2710,7 +2718,7 @@ padding:5px 30px 5px 30px; box-sizing:border-box; -webkit-box-sizing:border-box;
 
 .qbot-embed-m .group_box3 ul {float:left;position:relative; width:50%; padding:20px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box;}
 .qbot-embed-m .group_box3 ul li {text-align:left; line-height:150%; color:#606060; font-size:0.95em;} 
-.qbot-embed-m .group_box3 .stxt li {text-align:left; background:url(http://img.thinkpool.com/concert/qbot/qbot11/mb/images/bullet1.png) no-repeat; background-position:0 7px; 
+.qbot-embed-m .group_box3 .stxt li {text-align:left; background:url(../img/bullet1.png) no-repeat; background-position:0 7px; 
 padding-left:10px; line-height:150%; color:#606060; font-size:0.95em;}
 
 /* 임베드 정규화 */

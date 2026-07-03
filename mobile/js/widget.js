@@ -333,8 +333,8 @@ kb.widget.scroll.setScroll = function(_scrolldata)
 kb.widget.scroll.defaultSetting = {
 	'background':'#FFFFFF',							//스크롤시 배경색
 	'wrapperborder':'border:1px solid #AAAAAA',		//스크롤러 테두리
-	'leftarrowimg':'http://img.thinkpool.com/concert/qbot/qbot11/mb/images/arrow_left.png',		//고정열 좌측화살표
-	'rightarrowimg':'http://img.thinkpool.com/concert/qbot/qbot11/mb/images/arrow_right.png',	//고정열 우측화살표
+	'leftarrowimg':'img/arrow_left.png',		//고정열 좌측화살표
+	'rightarrowimg':'img/arrow_right.png',	//고정열 우측화살표
 	'arrowwidth':9,									//고정열 화살표 넓이
 	'arrowheight':15								//고정열 화살표 높이
 }

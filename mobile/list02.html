@@ -8,16 +8,16 @@
     <meta http-equiv="Cache-Control" content="No-Cache" />
     <title>대신증권</title>
     <link rel="stylesheet" type="text/css" href="css/qbot-embed-m.css" />
-    <script language="javascript" src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script language="javascript" src="jslib/jquery-1.8.0.min.js"></script>
     <script>
       $(document).bind('mobileinit', function () {
         $.mobile.autoInitializePage = false;
         $.mobile.autoInitializePage = false;
       });
     </script>
-    <script language="javascript" src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script language="javascript" src="jslib/jquery.mobile-1.2.0.min.js"></script>
     <script language="javascript" src="jslib/iscroll.js"></script>
-    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.min.js"></script>
+    <script language="javascript" src="jslib/json2.min.js"></script>
     <script language="javascript" src="jslib/jquery.xml2json.js"></script>
     <script language="javascript" src="js/bridge.js"></script>
     <script language="javascript" src="js/widget.js"></script>
@@ -36,31 +36,31 @@
 
       <style>
         /* 퀀트전략 선정 오른쪽테이블 컨텐츠부분 넓이 */
-        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(1n) {
+        .qbot-embed-m #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(1n) {
           width: 17% !important;
         }
 
-        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(2n) {
+        .qbot-embed-m #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(2n) {
           width: 10% !important;
         }
 
-        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(3n) {
+        .qbot-embed-m #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(3n) {
           width: 10% !important;
         }
 
-        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(4n) {
+        .qbot-embed-m #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(4n) {
           width: 10% !important;
         }
 
-        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(5n) {
+        .qbot-embed-m #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(5n) {
           width: 10% !important;
         }
 
-        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(6n) {
+        .qbot-embed-m #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(6n) {
           width: 15% !important;
         }
 
-        #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(7n) {
+        .qbot-embed-m #divGrid_flexableWrapper > div > table > tbody > tr > td:nth-child(7n) {
           width: 10% !important;
         }
       </style>
@@ -173,22 +173,22 @@
           <div class="tab_h2">
             <ul>
               <li>
-                <a class="t01" href="javascript:callMBMain();">
+                <a class="t01" href="javascript:QbotEmbed.callMBMain();">
                   <img style="width: 100%" src="img/tab_q_01.jpg" alt="퀀트전략소개" />
                 </a>
               </li>
               <li>
-                <a class="t02_on" href="javascript:callMBListMain();">
+                <a class="t02_on" href="javascript:QbotEmbed.callMBListMain();">
                   <img style="width: 100%" src="img/tab_q_02_on.jpg" alt="퀀트전략선정" />
                 </a>
               </li>
               <li>
-                <a class="t03" href="javascript:callMBMyMain();">
+                <a class="t03" href="javascript:QbotEmbed.callMBMyMain();">
                   <img style="width: 100%" src="img/tab_q_03.jpg" alt="나의 퀀트" />
                 </a>
               </li>
               <li>
-                <a class="t04" href="javascript:callMBSELLogic();">
+                <a class="t04" href="javascript:QbotEmbed.callMBSELLogic();">
                   <img style="width: 100%" src="img/tab_q_04.jpg" alt="퀀트포트폴리오" />
                 </a>
               </li>
@@ -197,7 +197,7 @@
         </div>
 
         <div class="btn_area_01">
-          <a href="javascript:setMBMainLogic();"><img src="img/btn_live_signal_05.jpg" width="278.4" height="44.8" /></a>
+          <a href="javascript:QbotEmbed.setMBMainLogic();"><img src="img/btn_live_signal_05.jpg" width="278.4" height="44.8" /></a>
         </div>
 
         <div class="align_box">정렬순서</div>
@@ -211,11 +211,11 @@
             <li><a href="#">유형</a></li>
             <li><a href="#">투자기간</a></li>
             <li class="btn_area">
-              <a href="#" onclick="showLayer('flow_list_01')"><img src="img/btn_close.jpg" width="60" height="26" /></a>
+              <a href="#" onclick="QbotEmbed.showLayer('flow_list_01')"><img src="img/btn_close.jpg" width="60" height="26" /></a>
             </li>
           </ul>
         </div>
-        <div id="align_list" onclick="showLayer('flow_list_01')" style="cursor: pointer">총수익률</div>
+        <div id="align_list" onclick="QbotEmbed.showLayer('flow_list_01')" style="cursor: pointer">총수익률</div>
         <!-- 컨텐츠영역 /S -->
         <div id="contents" class="contents">
           <!-- 스크롤 적용 테이블 /S -->

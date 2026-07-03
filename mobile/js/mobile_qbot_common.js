@@ -1,141 +1,109 @@
- function callMBService()
-{
-	window.open( '/qbot11/mb/service.jsp?snCust=' + document.getElementById('snCust').value);
-}
- 
- function callMBMain()
-{
-	document.location.href = '/qbot11/mb/index.jsp?snCust=' + document.getElementById('snCust').value;
-}
+(function (window, document) {
+  var embed = window.QbotEmbed || {};
+  var rootSelector = '.qbot-embed-m';
 
- function callMBListMain()
-{
-	document.location.href = '/qbot11/mb/join_qbot.jsp?snCust=' + document.getElementById('snCust').value;
-}
+  function getRoot() {
+    return document.querySelector(rootSelector) || document;
+  }
 
-function callMBListMainP()
-{
-	parent.location.href = '/qbot11/mb/join_qbot.jsp?snCust=' + document.getElementById('snCust').value;
-}
+  function getValue(id) {
+    var root = getRoot();
+    var el = root.querySelector ? root.querySelector('#' + id) : document.getElementById(id);
+    return el ? el.value : '';
+  }
 
- function callMBMyMain()
-{
-	document.location.href = '/qbot11/mb/my_qbot.jsp?snCust=' + document.getElementById('snCust').value;
-}
+  function getRadioValue(name) {
+    var root = getRoot();
+    var radios = root.querySelectorAll ? root.querySelectorAll('input[name="' + name + '"]') : document.getElementsByName(name);
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) return radios[i].value;
+    }
+    return '';
+  }
 
- function callMBMyMainP()
-{
-	parent.location.href = '/qbot11/mb/my_qbot.jsp?snCust=' + document.getElementById('snCust').value;
-}
+  function go(path) {
+    document.location.href = path;
+  }
 
-function callMBSELLogicStr(logic_str,pos)
-{
-	document.location.href = "/qbot11/mb/pms_info/T001_C_pre.jsp?snCust="+document.getElementById('snCust').value+"&lgstr="+logic_str+"&pos="+pos;
-}
+  function goParent(path) {
+    parent.location.href = path;
+  }
 
-function callMBSELLogic()
-{
-	document.location.href = "/qbot11/mb/pms_info/T001.jsp?snCust="+document.getElementById('snCust').value+"&pms_code="+document.getElementById('pms_code').value+"&pos=my_qbot";
-}
+  embed.callMBService = function () {
+    window.open('service.html');
+  };
 
-function setMBMainLogic()
-{
-	var pPms_code = getRadioValue("rdoPms_code");
-	
-	setMBLogic(pPms_code,"join");
-	
-	return;
-}
+  embed.callMBMain = function () {
+    go('list01.html');
+  };
 
-function setMBLogic(pPms_code,pos)
-{	
-	if (document.getElementById('snCust').value == '')
-	{
-		alert('본 서비스는 퀀트 서비스 신청 후 \n사용 하실 수 있습니다.');
-		return;
-	}
-	else if (pPms_code == '')
-	{
-		alert('등록할 전략정보가 선택되지 않았습니다.\n다시 시도하여 주세요.');
-		return;
-	}
-	else if (pPms_code ==document.getElementById('pms_code').value)
-	{
-		alert('해당 전략은 고객님께서 기존에 설정하신 전략입니다.');
-		return;
-	}
-	else
-	{
-		var goFlag = false;
-		if (document.getElementById('pms_code').value == '')
-		{
-			if (confirm('해당 전략을 등록하시겠습니까?')) {	goFlag = true;	}
-			else {	goFlag = false;	}
-		}
-		else
-		{
-			if (confirm('등록된 전략이 있습니다.\n변경 등록 하시겠습니까?')) {	goFlag = true;}
-			else {	goFlag = false;	}
-		}
+  embed.callMBListMain = function () {
+    go('list02.html');
+  };
 
-		if (goFlag)
-		{
-			
-			var idCheckUrl = "https://qbot.thinkpool.com:449/qbot11/pms_info/regLogic_json.jsp";
-				
-			jQuery.ajax({
-				type: 'POST',
-				async : false,
-				url: idCheckUrl,
-				data: {
-					pagetype:'json',snCust:document.getElementById('snCust').value,pms_code:pPms_code
-				},
-				success: function(data){
-															
-					if(data.rdata == "1")
-					{
-						alert("전략선택이 완료 되었습니다.");
-						if(pos=="tabGbD")	callMBMyMainP();
-						else		callMBMyMain();
-					}
-					else
-					{
-						if(pos=="tabGbD")	callMBListMainP();
-						else	callMBListMain();
-					}					
-				},
-				dataType: "json"
-			});
-			
-			;					
-		}
-		else
-		{
-			alert("변경을 취소하셨습니다");
-			
-			return;
-		}
-	}
-}
+  embed.callMBListMainP = function () {
+    goParent('list02.html');
+  };
 
+  embed.callMBMyMain = function () {
+    go('list03.html');
+  };
 
-function goUrl(combo) {
+  embed.callMBMyMainP = function () {
+    goParent('list03.html');
+  };
 
-	if (combo.value != "")
-		location.href = combo.value;
+  embed.callMBSELLogicStr = function (logicStr) {
+    go('list04_1.html');
+  };
 
-}
+  embed.callMBSELLogic = function () {
+    go('list04_1.html');
+  };
 
-function showLayer(pIdLayer)
-{
-	if (document.getElementById(pIdLayer).style.display == 'none')
-	{
-		document.getElementById(pIdLayer).style.display = 'block';
-	}
-	else
-	{
-		document.getElementById(pIdLayer).style.display = 'none';
-	}
-}
+  embed.setMBMainLogic = function () {
+    embed.setMBLogic(getRadioValue('rdoPms_code'), 'join');
+  };
 
+  embed.setMBLogic = function (pPmsCode, pos) {
+    if (getValue('snCust') === '') {
+      alert('본 서비스는 퀀트 서비스 신청 후 \n사용 하실 수 있습니다.');
+      return;
+    }
+    if (pPmsCode === '') {
+      alert('등록할 전략정보가 선택되지 않았습니다.\n다시 시도하여 주세요.');
+      return;
+    }
+    if (pPmsCode === getValue('pms_code')) {
+      alert('해당 전략은 고객님께서 기존에 설정하신 전략입니다.');
+      return;
+    }
 
+    if (!confirm(getValue('pms_code') === '' ? '해당 전략을 등록하시겠습니까?' : '등록된 전략이 있습니다.\n변경 등록 하시겠습니까?')) {
+      alert('변경을 취소하셨습니다');
+      return;
+    }
+
+    alert('전략선택이 완료 되었습니다.');
+    if (pos === 'tabGbD') embed.callMBMyMainP();
+    else embed.callMBMyMain();
+  };
+
+  embed.goUrl = function (combo) {
+    if (combo.value !== '') location.href = combo.value;
+  };
+
+  embed.showLayer = function (id) {
+    var root = getRoot();
+    var layer = root.querySelector ? root.querySelector('#' + id) : document.getElementById(id);
+    if (!layer) return;
+    layer.style.display = layer.style.display === 'none' || layer.style.display === '' ? 'block' : 'none';
+  };
+
+  window.QbotEmbed = embed;
+
+  var legacyNames = ['callMBService', 'callMBMain', 'callMBListMain', 'callMBListMainP', 'callMBMyMain', 'callMBMyMainP', 'callMBSELLogicStr', 'callMBSELLogic', 'setMBMainLogic', 'setMBLogic', 'goUrl', 'showLayer'];
+  for (var i = 0; i < legacyNames.length; i++) {
+    if (!window[legacyNames[i]]) window[legacyNames[i]] = embed[legacyNames[i]];
+  }
+})(window, document);

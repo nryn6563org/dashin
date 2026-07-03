@@ -8,16 +8,16 @@
     <meta http-equiv="Cache-Control" content="No-Cache" />
     <title>대신증권</title>
     <link rel="stylesheet" type="text/css" href="css/qbot-embed-m.css" />
-    <script language="javascript" src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script language="javascript" src="jslib/jquery-1.8.0.min.js"></script>
     <script>
       $(document).bind('mobileinit', function () {
         $.mobile.autoInitializePage = false;
         $.mobile.autoInitializePage = false;
       });
     </script>
-    <script language="javascript" src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script language="javascript" src="jslib/jquery.mobile-1.2.0.min.js"></script>
     <script language="javascript" src="jslib/iscroll.js"></script>
-    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.min.js"></script>
+    <script language="javascript" src="jslib/json2.min.js"></script>
     <script language="javascript" src="jslib/jquery.xml2json.js"></script>
     <script language="javascript" src="js/bridge.js"></script>
     <script language="javascript" src="js/widget.js"></script>
@@ -39,22 +39,22 @@
           <div class="tab_h2">
             <ul>
               <li>
-                <a class="t01" href="javascript:callMBMain();">
+                <a class="t01" href="javascript:QbotEmbed.callMBMain();">
                   <img style="width: 100%" src="img/tab_q_01.jpg" alt="퀀트전략소개" />
                 </a>
               </li>
               <li>
-                <a class="t02" href="javascript:callMBListMain();">
+                <a class="t02" href="javascript:QbotEmbed.callMBListMain();">
                   <img style="width: 100%" src="img/tab_q_02.jpg" alt="퀀트전략선정" />
                 </a>
               </li>
               <li>
-                <a class="t03" href="javascript:callMBMyMain();">
+                <a class="t03" href="javascript:QbotEmbed.callMBMyMain();">
                   <img style="width: 100%" src="img/tab_q_03.jpg" alt="나의 퀀트" />
                 </a>
               </li>
               <li>
-                <a class="t04_on" href="javascript:callMBSELLogic();">
+                <a class="t04_on" href="javascript:QbotEmbed.callMBSELLogic();">
                   <img style="width: 100%" src="img/tab_q_04_on.jpg" alt="퀀트포트폴리오" />
                 </a>
               </li>
@@ -108,23 +108,55 @@
               <li><a href="#">리치단기</a></li>
 
               <li class="btn_area">
-                <a href="#" onclick="showLayer('flow_list_01_s')"><img src="img/btn_close.jpg" width="63" height="30" /></a>
+                <a href="#" onclick="QbotEmbed.showLayer('flow_list_01_s')"><img src="img/btn_close.jpg" width="63" height="30" /></a>
               </li>
             </ul>
           </div>
-          <div id="align_list_s" onclick="showLayer('flow_list_01_s')" style="cursor: pointer">타 전략 바로가기</div>
+          <div id="align_list_s" onclick="QbotEmbed.showLayer('flow_list_01_s')" style="cursor: pointer">타 전략 바로가기</div>
           <div class="q_m_box">
             <ul>
-              <li><a class="m01" href="#"></a></li>
-              <li><a class="m02" href="#"></a></li>
-              <li><a class="m03" href="#"></a></li>
-              <li><a class="m04_on" href="#"></a></li>
-              <li><a class="m05" href="#"></a></li>
-              <li><a class="m06" href="#"></a></li>
+              <li><a class="m01" href="list04_1.html"></a></li>
+              <li><a class="m02" href="list04_2.html"></a></li>
+              <li><a class="m03" href="list04_3.html"></a></li>
+              <li><a class="m04_on" href="list04_4.html"></a></li>
+              <li><a class="m05" href="list04_5.html"></a></li>
+              <li><a class="m06" href="list04_6.html"></a></li>
             </ul>
           </div>
 
-          <iframe src="https://qbot.thinkpool.com:449/qbot11/mb/pms_info/T001_D_C.jsp?snCust=0003502163&amp;pageName=&amp;pms_code=00000805&amp;pos=" width="100%" height="600" scrolling="no" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+          <div class="qbot-inline-frame qbot-inline-frame--monthly" data-qbot-source="T001_D_C.jsp">
+            <table class="q_list_04" cellspacing="0" border="1" summary="월별수익률" style="margin-top: 5px">
+              <caption>월별수익률</caption>
+              <colgroup>
+                <col width="24%" />
+                <col width="24%" />
+                <col width="25%" />
+                <col width="27%" />
+              </colgroup>
+              <tr>
+                <th scope="col">기준년</th>
+                <th scope="col">월간 수익률</th>
+                <th scope="col">KOSPI<br />월간수익률</th>
+                <th scope="col">벤치마크대비<br />월간수익률</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td class="date">-</td>
+                  <td><span class="t_red">-</span></td>
+                  <td><span class="t_blue">-</span></td>
+                  <td><span class="t_red">-</span></td>
+                </tr>
+                <tr>
+                  <td class="line" colspan="4" bgcolor="#a29e95"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="pagingNav" style="margin: 10px auto 20px; height: 25px; text-align: center">
+              <strong class="cur_num">1</strong>
+              <a class="num_box" href="#">2</a>
+              <a class="num_next" href="#">▶</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
